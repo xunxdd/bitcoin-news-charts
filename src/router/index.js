@@ -13,9 +13,10 @@ export default new Router({
     },
     { path: '/hello', component: HelloWorld },
     {
-      path: '/news',
+      path: '/news/:src',
       name: 'News',
-      component: CoinNews
+      component: CoinNews,
+      props: true
     }
   ]
 })

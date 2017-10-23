@@ -1,34 +1,34 @@
 <script>
 import FirebaseApp from '../services/firebase.srv'
-import _ from 'lodash'
-import moment from 'moment'
+import NewsService from '../services/newsUtil'
 let newsRef = FirebaseApp.database().ref('/root');
 
 export default {
   name: 'news',
-  data () {
+  props: {
+    src: String
+  },
+  data() {
     return {
-      news: ['Coin Desk']
+      newsItems: [],
+      srcName: ''
     }
   },
-  firebase: {
-    coinDesk: newsRef.child('Coin-Desk').limitToLast(12)
+  created() {
+    this.fetchData()
   },
-  computed: {
-    newsParsed: function () {
-      let newsItems = []
-      _.each(this.coinDesk, (item) => {
-        let dateStr = ''
-        if (item.title && item.link) {
-          if (item.timeStampInsert) {
-            dateStr = moment(new Date(item.timeStampInsert)).format('MMMM Do YYYY, h:mm:ss a')
-          }
+  watch: {
+    '$route': 'fetchData'
+  },
+  methods: {
+    fetchData() {
+      this.srcName = NewsService.getNewsSrcName(this.src);
+      const ref = newsRef.child(this.src).limitToLast(12);
+      ref.once('value', this.bindData.bind(this));
+    },
 
-          item.dateStr = dateStr
-          newsItems.push(item)
-        }
-      })
-      return newsItems
+    bindData(snapshot) {
+      this.newsItems = NewsService.getNewsItems(snapshot);
     }
   }
 }
@@ -36,24 +36,26 @@ export default {
 
 <template>
 <div>
-  <v-layout  row wrap>
+  <v-layout row wrap>
     <v-flex xs12>
-      <h3>Coin Desk</h3>
+      <h3>{{srcName}}</h3>
     </v-flex>
-    <v-flex xs12 sm12  v-for="(newsItem, index) in newsParsed" :key="index">
+    <v-flex xs12 sm12 v-for="(newsItem, index) in newsItems" :key="index">
       <v-card>
-        <v-card-media v-if="newsItem.image" :src="newsItem.image" height="200px">
+        <v-card-media v-if="newsItem.image" :src="newsItem.image" height="200px" width="500px">
         </v-card-media>
         <v-card-title primary-title :to="newsItem.link">
           <div>
             <span class="grey--text">{{ newsItem.dateStr}}</span><br>
-            <a :href="newsItem.link"  target="_blank" class="white--text"><h3 class="headline mb-0">{{newsItem.title}}</h3></a>
+            <a :href="newsItem.link" target="_blank" class="white--text"><h3 class="headline mb-0">{{newsItem.title}}</h3></a>
             <div v-if="newsItem.summary" v-html="newsItem.summary"></div>
           </div>
         </v-card-title>
         <v-card-actions>
           <v-btn flat class="orange--text">Share</v-btn>
-          <a :href="newsItem.link" target="_blank" ><v-btn flat class="orange--text">Explore</v-btn></a>
+          <a :href="newsItem.link" target="_blank">
+            <v-btn flat class="orange--text">Explore</v-btn>
+          </a>
         </v-card-actions>
       </v-card>
     </v-flex>

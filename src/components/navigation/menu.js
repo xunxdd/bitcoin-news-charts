@@ -4,32 +4,34 @@ export const Menu = [{
     text: 'News',
     active: true,
     items: [{
-      icon: 'trending_up',
       text: 'Coin-Desk',
-      link: 'news/coin-desk',
+      link: '/news/coin-desk',
       img: 'coindesk.png'
+    },
+    {
+      text: 'Bitcoin Magzine',
+      link: '/news/bitcoin-magzine',
+      img: 'bitcoin-magzine.png'
+    },
+    {
+      text: 'CrytoCoins News',
+      link: '/news/crypto-coin-news',
+      img: 'cryptocoinsnews.png'
+    },
+    {
+      text: 'Coin Telegraph',
+      link: '/news/coin-telegraph',
+      img: 'cointelegraph.png'
+    },
+    {
+      text: 'News Bitcoin',
+      link: '/news/news-bitcoin',
+      img: 'news-bitcoin.png'
+    },
+    {
+      text: 'SubReddit CryptoCurrency',
+      link: '/news/subreddit-cryptocurrency',
+      img: 'reddit-crypto.png'
     }]
-  },
-  {
-    icon: 'trending_up',
-    text: 'Most Popular',
-    link: 'hello'
-  },
-  {
-    icon: 'subscriptions',
-    text: 'Subscriptions',
-    link: 'news'
-  },
-  {
-    icon: 'history',
-    text: 'History'
-  },
-  {
-    icon: 'featured_play_list',
-    text: 'Playlists'
-  },
-  {
-    icon: 'watch_later',
-    text: 'Watch Later'
   }
 ]

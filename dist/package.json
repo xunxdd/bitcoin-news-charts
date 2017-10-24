@@ -1,0 +1,10 @@
+{
+ "name": "bitcoin-news-chart",
+ "version": "1.0.0",
+ "description": "bitcoin news and financial charts",
+ "author": "Xun Ding",
+ "private": true,
+ "scripts": {
+   "postinstall": "npm install express"
+ }
+}

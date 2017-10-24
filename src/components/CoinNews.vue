@@ -22,6 +22,7 @@ export default {
   },
   methods: {
     fetchData() {
+      this.src = this.src || 'coin-desk';
       this.srcName = NewsService.getNewsSrcName(this.src);
       const ref = newsRef.child(this.src).limitToLast(12);
       ref.once('value', this.bindData.bind(this));

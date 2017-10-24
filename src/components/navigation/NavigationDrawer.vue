@@ -32,16 +32,18 @@
       </v-list-tile-action>
       <v-list-tile-title class="grey--text text--darken-1">Browse Channels</v-list-tile-title>
     </v-list-tile>
-  -->  
+  -->
   </v-navigation-drawer>
   <v-toolbar color="red" dense fixed clipped-left app>
-    <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
+    <v-toolbar-title class="ml-0 pl-3">
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-icon class="ml-3">fa-youtube</v-icon>
+      <v-icon class="ml-3 fa-2x">fa-bitcoin</v-icon>
+      News and Financial Charts
     </v-toolbar-title>
-    <v-layout row align-center style="max-width: 650px">
+    <!--<v-layout row align-center style="max-width: 650px">
       <v-text-field placeholder="Search..." single-line append-icon="search" :append-icon-cb="() => {}" class="white--text" hide-details></v-text-field>
     </v-layout>
+    -->
   </v-toolbar>
 </div>
 </template>

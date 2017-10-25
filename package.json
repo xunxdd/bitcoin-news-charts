@@ -11,12 +11,18 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
+    "deploy": "git subtree push --prefix dist heroku master",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "bitfinex-api-node": "^1.2.1",
     "firebase": "^4.6.0",
+    "firebase-admin": "^5.4.3",
     "lodash": "^4.17.4",
     "moment": "^2.19.1",
+    "osmosis": "^1.1.4",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuefire": "^1.4.4",

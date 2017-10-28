@@ -1,5 +1,6 @@
 <template>
-  <svg></svg>
+  <div id="fin-chart">
+  </div>
 </template>
 <script>
 var d3 = window.d3;
@@ -8,8 +9,16 @@ var techan = window.techan;
 export default {
   name: 'chart',
   props: ['chartData', 'dimension', 'title'],
-
+  watch: {
+    'chartData': 'updateChart'
+  },
   methods: {
+    updateChart() {
+      console.log('data change detected');
+      d3.select('svg').remove()
+      this.renderChart()
+    },
+
     mapData(data) {
       var parseDate = d3.timeParse('%b %d, %Y');
       return data.map(function(d) {
@@ -48,6 +57,7 @@ export default {
         .range([dim.ohlc.height, 0]);
 
       var svg = d3.select(this.$el)
+        .append('svg')
         .attr('width', dim.width)
         .attr('height', dim.height);
 
@@ -170,7 +180,7 @@ export default {
     },
 
     renderChart() {
-      console.log('agag. please redraw')
+      console.log('redraw')
       var setup = this.setSvg();
       var x = setup.x;
       var y = setup.y;

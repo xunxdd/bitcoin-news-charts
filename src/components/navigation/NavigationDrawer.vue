@@ -16,10 +16,10 @@
         </v-list-tile>
         <v-list-tile v-for="subItem in item.items" v-bind:key="subItem.text" :router="!!subItem.link" :to="subItem.link" v-if="item.items">
           <v-avatar size="16px">
-            <img :src="`./static/images/${subItem.img}`" :alt="subItem.text">
+            <img :src="`./static/${subItem.img}`" :alt="subItem.text">
           </v-avatar>
           <v-list-tile-content>
-            <v-list-tile-title>{{ subItem.text }}</v-list-tile-title>
+            <v-list-tile-title  class="white-link">{{ subItem.text }}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list-group>
@@ -61,3 +61,9 @@ export default {
   })
 }
 </script>
+
+<style>
+.navigation-drawer>.list .list--group__container .list__tile--active .list__tile__title.white-link {
+  color: whitesmoke;
+}
+</style>

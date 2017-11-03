@@ -1,10 +1,19 @@
 <template>
 <div>
-  <h4>{{title}} Financial Chart</h4> <h5>({{this.dateSpan.startDate}} - {{this.dateSpan.endDate}})</h5>
-  <chart :chart-data="chartData" :dimension="dimension" :title="title"></chart>
-  <div class="white--text" pre>
-    Devour the MACD (Moving average convergence divergence), RSI (The Relative Strength Index), drink up the candlesticks. Have a wild ride!
-  </div>
+  <v-layout row wrap>
+    <v-flex xs12>
+      <h4>{{title}} Financial Chart</h4>
+      <h5>({{this.dateSpan.startDate}} - {{this.dateSpan.endDate}})</h5>
+    </v-flex>
+    <v-flex xs12 sm12>
+      <chart :chart-data="chartData" :dimension="dimension" :title="title"></chart>
+    </v-flex>
+    <v-flex xs8 center>
+      <div class="white--text">
+        Devour the MACD (Moving average convergence divergence), RSI (The Relative Strength Index), drink up the candlesticks, digest the volumes and percentages. Have a wild ride!
+      </div>
+    </v-flex>
+  </v-layout>
 </div>
 </template>
 
@@ -25,11 +34,11 @@ export default {
   },
   methods: {
     fetchData() {
-      this.coin = this.coin || 'bitcoin';
-      this.chartData = CoinData[this.coin];
-      this.title = DataUtil.getCoinName(this.coin);
+      let coin = this.coin || 'bitcoin';
+      this.chartData = CoinData[coin];
+      this.title = DataUtil.getCoinName(coin);
       this.dateSpan = this.getDateSpan(this.chartData);
-      DataUtil.getCoinData(this.coin, 'PastThreeMonths').then(this.bindData.bind(this));
+      DataUtil.getCoinData(coin, 'PastThreeMonths').then(this.bindData.bind(this));
     },
 
     bindData(data) {

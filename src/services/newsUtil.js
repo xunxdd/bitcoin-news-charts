@@ -17,6 +17,9 @@ const NewsSources = {
   'news-bitcoin': {
     Name: 'News Bitcoin'
   },
+  'subreddit-bitcoin': {
+    Name: 'reddit/r/bitcoin'
+  },
   'subreddit-cryptocurrency': {
     Name: 'reddit/r/cryptocurrency'
   }

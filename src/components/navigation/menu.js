@@ -50,6 +50,11 @@ export const Menu = [{
         img: 'images/news-bitcoin.png'
       },
       {
+        text: 'SubReddit Bitcoin',
+        link: '/news/subreddit-bitcoin',
+        img: 'images/reddit-crypto.png'
+      },
+      {
         text: 'SubReddit CryptoCurrency',
         link: '/news/subreddit-cryptocurrency',
         img: 'images/reddit-crypto.png'

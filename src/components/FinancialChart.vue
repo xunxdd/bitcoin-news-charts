@@ -1,6 +1,6 @@
 <template>
 <div>
-  <h4>{{coin}} Financial Chart ()</h4>
+  <h4>{{title}} Financial Chart</h4> <h5>({{this.dateSpan.startDate}} - {{this.dateSpan.endDate}})</h5>
   <chart :chart-data="chartData" :dimension="dimension" :title="title"></chart>
 </div>
 </template>
@@ -10,6 +10,7 @@ import Chart from './charts/chart'
 import {
   CoinData
 } from '../assets/coinData'
+import DataUtil from '../services/DataUtil'
 
 export default {
   name: 'AllPlotsChart',
@@ -21,9 +22,25 @@ export default {
   },
   methods: {
     fetchData() {
-      console.log('dgag', this.coin)
       this.chartData = CoinData[this.coin];
-      this.title = this.coin;
+      this.title = DataUtil.getCoinName(this.coin);
+      this.dateSpan = this.getDateSpan(this.chartData);
+      DataUtil.getCoinData(this.coin, 'PastThreeMonths').then(this.bindData.bind(this));
+    },
+
+    bindData(data) {
+      if (data.length > 0) {
+        this.chartData = data;
+        this.dateSpan = this.getDateSpan(data);
+      }
+    },
+
+    getDateSpan(data) {
+      let len = data.length;
+      return {
+        startDate: data[len - 1].Date,
+        endDate: data[0].Date
+      }
     }
   },
   created() {
@@ -36,6 +53,7 @@ export default {
     return {
       chartData: [],
       title: '',
+      dataSpan: {},
       dimension: {
         width: 960,
         height: 500,

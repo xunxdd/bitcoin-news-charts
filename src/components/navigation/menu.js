@@ -23,7 +23,7 @@ export const Menu = [{
   {
     icon: 'subscriptions',
     text: 'News',
-    active: true,
+    active: false,
     items: [{
         text: 'Coin-Desk',
         link: '/news/coin-desk',

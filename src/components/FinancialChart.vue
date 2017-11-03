@@ -2,6 +2,9 @@
 <div>
   <h4>{{title}} Financial Chart</h4> <h5>({{this.dateSpan.startDate}} - {{this.dateSpan.endDate}})</h5>
   <chart :chart-data="chartData" :dimension="dimension" :title="title"></chart>
+  <div class="white--text" pre>
+    Devour the MACD (Moving average convergence divergence), RSI (The Relative Strength Index), drink up the candlesticks. Have a wild ride!
+  </div>
 </div>
 </template>
 
@@ -22,6 +25,7 @@ export default {
   },
   methods: {
     fetchData() {
+      this.coin = this.coin || 'bitcoin';
       this.chartData = CoinData[this.coin];
       this.title = DataUtil.getCoinName(this.coin);
       this.dateSpan = this.getDateSpan(this.chartData);

@@ -53,10 +53,6 @@ export default {
           </div>
         </v-card-title>
         <v-card-actions>
-          <v-btn flat class="orange--text">Share</v-btn>
-          <a :href="newsItem.link" target="_blank">
-            <v-btn flat class="orange--text">Explore</v-btn>
-          </a>
         </v-card-actions>
       </v-card>
     </v-flex>

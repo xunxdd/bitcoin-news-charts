@@ -9,7 +9,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: CoinNews
+      component: FinancialChart
     },
     { path: '/hello', component: HelloWorld },
     {

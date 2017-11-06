@@ -35,8 +35,8 @@
   -->
   </v-navigation-drawer>
   <v-toolbar color="red" dense fixed clipped-left app>
+    <v-icon @click.stop="drawer = !drawer">menu</v-icon>
     <v-toolbar-title class="ml-0 pl-3">
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-icon class="ml-3 fa-2x">fa-bitcoin</v-icon>
       News and Financial Charts
     </v-toolbar-title>

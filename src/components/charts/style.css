@@ -1,9 +1,22 @@
 svg {
   background-color: white
 }
+
 path {
   fill: none;
   stroke-width: 1;
+}
+
+path.line {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 1;
+}
+
+.google path.line{
+  fill: none;
+  stroke: red;
+  stroke-width: 2;
 }
 
 path.candle {
@@ -78,20 +91,17 @@ path.rsi {
   stroke: #000000;
 }
 
-path.overbought,
-path.oversold {
+path.overbought, path.oversold {
   stroke: #FF9999;
   stroke-dasharray: 5, 5;
 }
 
-path.middle,
-path.zero {
+path.middle, path.zero {
   stroke: #BBBBBB;
   stroke-dasharray: 5, 5;
 }
 
-.analysis path,
-.analysis circle {
+.analysis path, .analysis circle {
   stroke: blue;
   stroke-width: 0.8;
 }
@@ -110,13 +120,11 @@ path.zero {
   display: inline;
 }
 
-.dragging .trendline path,
-.dragging .trendline circle {
+.dragging .trendline path, .dragging .trendline circle {
   stroke: darkblue;
 }
 
-.interaction path,
-.interaction circle {
+.interaction path, .interaction circle {
   pointer-events: all;
 }
 
@@ -124,8 +132,7 @@ path.zero {
   cursor: move;
 }
 
-.trendlines .interaction .start,
-.trendlines .interaction .end {
+.trendlines .interaction .start, .trendlines .interaction .end {
   cursor: nwse-resize;
 }
 
@@ -182,4 +189,12 @@ path.zero {
 
 .tradearrow path.highlight.sell {
   stroke: #9900FF;
+}
+
+#GoogleTrend-CloseLine-chart .axis-right text{
+  fill: red;
+}
+
+#GoogleTrend-CloseLine-chart .y.axis text{
+  fill: black;
 }

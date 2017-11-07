@@ -3,6 +3,8 @@
   </div>
 </template>
 <script>
+import chartDataUtil from './chartDataUtil';
+
 var d3 = window.d3;
 var techan = window.techan;
 
@@ -17,21 +19,6 @@ export default {
       console.log('data change detected');
       d3.select('svg').remove()
       this.renderChart()
-    },
-
-    mapData(data) {
-      var parseDate = d3.timeParse('%b %d, %Y');
-      return data.map(function(d) {
-        var volume = parseFloat(d.Volume.replace(/,/g, '')) / 1000;
-        return {
-          date: parseDate(d.Date),
-          open: +d.Open,
-          high: +d.High,
-          low: +d.Low,
-          close: +d.Close,
-          volume: +volume
-        };
-      })
     },
 
     getDim(dimension) {
@@ -324,7 +311,7 @@ export default {
 
       var accessor = candlestick.accessor();
       var indicatorPreRoll = 33; // Don't show where indicators don't have data
-      var data = this.mapData(this.chartData).sort(function(a, b) {
+      var data = chartDataUtil.mapMarketCapData(this.chartData).sort(function(a, b) {
         return d3.ascending(accessor.d(a), accessor.d(b));
       });
 

@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import CoinNews from '@/components/CoinNews'
 import FinancialChart from '@/components/FinancialChart'
+import GoogleTrendAndPriceChart from '@/components/googleTrendClose'
 Vue.use(Router)
 
 export default new Router({
@@ -11,7 +11,10 @@ export default new Router({
       path: '/',
       component: FinancialChart
     },
-    { path: '/hello', component: HelloWorld },
+    {
+      path: '/trend/:coin',
+      component: GoogleTrendAndPriceChart
+    },
     {
       path: '/news/:src',
       name: 'News',

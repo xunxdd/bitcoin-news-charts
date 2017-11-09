@@ -32,19 +32,24 @@
       News and Financial Charts
     </v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-layout row>
-      <div class="text-xs-right">
-        <span class="margin-right-20">BTC: ${{tickerData.bitcoin.price_usd}}</span>
-        <span class="margin-right-20">Ethereum: ${{tickerData.ethereum.price_usd}}</span>
-        <span class="margin-right-20">Litecoin: ${{tickerData.litecoin.price_usd}}</span>
-      </div>
-    </v-layout>
+    <div class="text-xs-right margin-right-20">
+      <span class="margin-right-20">Updated @ {{tickerData.updated}}</span>
+      <span class="margin-right-20">Bitcoin: ${{tickerData.bitcoin.price_usd}}</span>
+      <span class="margin-right-20">Ethereum: ${{tickerData.ethereum.price_usd}}</span>
+      <span class="margin-right-20">Litecoin: ${{tickerData.litecoin.price_usd}}</span>
+    </div>
+    <a href="https://github.com/xunxdd/bitcoin-news-charts">
+      <v-icon class="btn-white" style="color:white">fa-github</v-icon>
+    </a>
   </v-toolbar>
+
 </div>
 </template>
 
 <script>
-import {Menu} from './menu'
+import {
+  Menu
+} from './menu'
 import DataUtil from '../../services/DataUtil';
 
 export default {
@@ -55,14 +60,16 @@ export default {
     tickerData: {
       bitcoin: '',
       ethereum: '',
-      litecoin: ''
+      litecoin: '',
+      updated: ''
     }
   }),
   methods: {
     loadData() {
       DataUtil.getMarketCapTicker().then(function(data) {
         this.tickerData = data;
-        console.log(this.tickerData);
+        this.tickerData.updated = new Date().toLocaleTimeString();
+        console.log(this.tickerData.updated);
       }.bind(this));
     }
   },
@@ -80,6 +87,7 @@ export default {
 .navigation-drawer>.list .list--group__container .list__tile--active .list__tile__title.white-link {
   color: whitesmoke;
 }
+
 .margin-right-20 {
   margin-right: 20px;
 }

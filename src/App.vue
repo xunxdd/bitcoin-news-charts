@@ -14,7 +14,7 @@
   </main>
   <template>
   <v-footer app color="grey darken-1" fixed>
-    <span class="white--text"><a href="#" class="white-text">xun</a> &copy; 2017</span>
+    <span class="white--text"><a href="https://github.com/xunxdd" class="white-text">xun</a> &copy; 2017</span>
     <v-spacer />
     <span class="white--text">
     Buy me a coffee? Bitcoin Address: 1JEipwJjeWz96pCoCmLb6fYwK64Qj2tE7f &nbsp;&nbsp;&nbsp; Litecoin:

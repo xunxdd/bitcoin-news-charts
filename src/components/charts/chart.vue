@@ -75,11 +75,6 @@ export default {
       svg = svg.append('g')
         .attr('transform', 'translate(' + dim.margin.left + ',' + dim.margin.top + ')');
 
-      svg.append('text')
-        .attr('class', 'symbol')
-        .attr('x', 20)
-        .text(this.title);
-
       svg.append('g')
         .attr('class', 'x axis')
         .attr('transform', 'translate(0,' + dim.plot.height + ')');

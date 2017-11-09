@@ -1,5 +1,5 @@
 <template>
-<div id='GoogleTrend-CloseLine-chart'>
+<div id='GoogleTrend-CloseLine-chart' class="financial-chart">
 </div>
 </template>
 <script>
@@ -86,13 +86,11 @@ export default {
       console.log('redraw')
       let data = chartDataUtil.mapMarketCapData(this.dataSet.chartData);
       let trendData = chartDataUtil.mapGoogleTrendData(this.dataSet.trendData);
-      console.log(trendData)
       let svgSetup = this.setSvg(this.dimension, this.title);
       let svg = svgSetup.svg;
       let y1 = svgSetup.y1;
       let x = svgSetup.x;
       let close = techan.plot.close().xScale(svgSetup.x).yScale(svgSetup.y)
-      console.log(close)
       var valueline2 = d3.line()
         .x(function(d) {
           return x(d.date);
@@ -100,7 +98,6 @@ export default {
         .y(function(d) {
           return y1(d.value);
         });
-      console.log(valueline2)
 
       let accessor = close.accessor()
       data = data.sort(function(a, b) {
@@ -111,10 +108,7 @@ export default {
       svgSetup.y1.domain([0, d3.max(trendData, function(d) {
         return Math.max(d.value);
       })]);
-      var c = svg.selectAll('g.close').datum(data).call(close)
-      console.log(c)
-      // var s = svg.selectAll('g.google').data(trendData).call(valueline2)
-      // console.log(s)
+      svg.selectAll('g.close').datum(data).call(close);
       svg.selectAll('g.google').append('path')
         .data([trendData])
         .attr('class', 'line')

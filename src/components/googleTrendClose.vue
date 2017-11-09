@@ -2,45 +2,70 @@
 <div>
   <v-layout row wrap>
     <v-flex xs12>
-      <h4>{{title}} Bitcoin Google Trend and Price Close</h4>
+      <h4>{{title}} Google Trend and Price</h4>
       <h5>({{this.dateSpan.startDate}} - {{this.dateSpan.endDate}})</h5>
     </v-flex>
     <v-flex xs12 sm12>
-      <google-trend-close-line
-      :data-set="dataSet"
-      :dimension="dimension"
-      title="bitcoin" >
+      <google-trend-close-line :data-set="dataSet" :dimension="dimension" title="bitcoin">
       </google-trend-close-line>
     </v-flex>
-    <v-flex xs8 center>
-      <div class="white--text">
-        Devour the MACD (Moving average convergence divergence), RSI (The Relative Strength Index), drink up the candlesticks, digest the volumes and percentages. Have a wild ride!
-      </div>
+    <v-flex xs12 sm12>
+      <h4>{{title}} Google Trend Regional Interest</h4>
+      <geo-chart :data="trendData.regional" height="300px" width="960px" display-mode="regional"></geo-chart>
     </v-flex>
+    <v-layout row wrap>
+      <v-flex xs12 sm5>
+        <trend-list :data-list="trendData.queries" title="Search Queries" field="query"></trend-list>
+      </v-flex>
+      <v-flex xs12 sm5>
+        <trend-list :data-list="trendData.topics" title="Search Topics" field="topic.title"></trend-list>
+      </v-flex>
+    </v-layout>
   </v-layout>
 </div>
 </template>
 
 <script>
 import GoogleTrendCloseLine from './charts/googleTrendCloseLine'
+import TrendList from './lists/TrendList'
 import DataUtil from '../services/DataUtil'
 
 export default {
   name: 'GoogleTrendAndPriceChart',
   components: {
-    GoogleTrendCloseLine
+    GoogleTrendCloseLine,
+    TrendList
   },
   props: {
     coin: String
   },
   methods: {
     fetchData() {
+      console.log(this.coin);
       let coin = this.coin || 'bitcoin';
       this.title = DataUtil.getCoinName(coin);
       let p1 = DataUtil.getCoinData(coin, 'PastThreeMonths');
-      let p2 = DataUtil.getGoogleTrendData(coin, 'PastThreeMonths');
+      let p2 = DataUtil.getGoogleTrendData(coin, 'PastThreeMonths', 'trend');
       var promises = [p1, p2];
       Promise.all(promises).then(this.bindData.bind(this));
+      this.fetchRelatedTrendData(coin);
+    },
+
+    fetchRelatedTrendData(coin) {
+      let p1 = DataUtil.getRegionalInterestData(coin);
+      let p2 = DataUtil.getRelatedQueryData(coin);
+      let p3 = DataUtil.getRelatedTopicsData(coin);
+      var promises = [p1, p2, p3];
+      Promise.all(promises).then(this.bindTrendData.bind(this));
+    },
+
+    bindTrendData(results) {
+      this.trendData = {
+        regional: results[0],
+        queries: results[1],
+        topics: results[2]
+      };
+      console.log(this.trendData.topics)
     },
 
     bindData(results) {
@@ -61,7 +86,7 @@ export default {
       }
     }
   },
-  created() {
+  mounted() {
     this.fetchData()
   },
   watch: {
@@ -72,9 +97,12 @@ export default {
       dataSet: {},
       title: '',
       dateSpan: {},
+      trendData: {
+        regional: []
+      },
       dimension: {
         width: 960,
-        height: 500,
+        height: 300,
         margin: {
           top: 20,
           right: 50,

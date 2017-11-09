@@ -1,5 +1,5 @@
 <template>
-  <div id="fin-chart">
+  <div id="fin-chart" class="financial-chart">
   </div>
 </template>
 <script>

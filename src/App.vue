@@ -12,6 +12,16 @@
       </v-container>
     </v-content>
   </main>
+  <template>
+  <v-footer app color="grey darken-1" fixed>
+    <span class="white--text"><a href="#" class="white-text">xun</a> &copy; 2017</span>
+    <v-spacer />
+    <span class="white--text">
+    Buy me a coffee? Bitcoin Address: 1JEipwJjeWz96pCoCmLb6fYwK64Qj2tE7f &nbsp;&nbsp;&nbsp; Litecoin:
+    LaNSUmsUidJmNfFQnbWwPFv4c9jUh5rXVD
+    </span>
+  </v-footer>
+</template>
 </v-app>
 </template>
 

@@ -13,7 +13,9 @@ export default new Router({
     },
     {
       path: '/trend/:coin',
-      component: GoogleTrendAndPriceChart
+      name: 'Trend',
+      component: GoogleTrendAndPriceChart,
+      props: true
     },
     {
       path: '/news/:src',

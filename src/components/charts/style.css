@@ -1,13 +1,13 @@
-svg {
+ svg {
   background-color: white
 }
 
-path {
+.financial-chart path {
   fill: none;
   stroke-width: 1;
 }
 
-path.line {
+.financial-chart path.line {
   fill: none;
   stroke: #000000;
   stroke-width: 1;

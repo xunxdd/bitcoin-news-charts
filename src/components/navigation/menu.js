@@ -21,13 +21,23 @@ export const Menu = [{
     ]
   },
   {
-    icon: 'trending_up',
+    icon: 'fa-line-chart',
     text: 'Google Trend vs Price',
     active: false,
     items: [{
         text: 'Bitcoin',
         link: '/trend/bitcoin',
         img: 'coins/bitcoin.png'
+      },
+      {
+        text: 'Ethereum',
+        link: '/trend/ethereum',
+        img: 'coins/ethereum.png'
+      },
+      {
+        text: 'Litecoin',
+        link: '/trend/litecoin',
+        img: 'coins/litecoin.png'
       }
     ]
   },

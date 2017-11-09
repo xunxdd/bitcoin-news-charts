@@ -1,5 +1,7 @@
 import FirebaseApp from './firebase.srv'
+import Vue from 'vue'
 import _ from 'lodash'
+
 const CoinMap = {
   'bitcoin': {
     Name: 'Bitcoin'
@@ -16,11 +18,11 @@ export default {
     return CoinMap[coin].Name || '###$$';
   },
 
-  getGoogleTrendData(coin, timespan) {
-    let dataRef = FirebaseApp.database().ref('/trend/' + timespan + '/');
+  getGoogleTrendData(coin, timespan, refname) {
+    let dataRef = FirebaseApp.database().ref(`/${refname}/${timespan}/`);
     let dataItems = []
     const ref = dataRef.child(coin);
-    return new Promise(function (resolve, reject) {
+    return new Promise(function(resolve, reject) {
       return ref.once('value').then((snapshot) => {
         let val = (snapshot.val());
         try {
@@ -40,11 +42,56 @@ export default {
     });
   },
 
+  getRegionalInterestData(coin) {
+    return this.getGoogleTrendRelatedData(coin, 'PastThreeMonths', 'region-interest').then(function(data) {
+      var geoMapData = _.get(data, 'default.geoMapData');
+      return _.map(geoMapData, function(data) {
+        return [data.geoName, data.value[0]];
+      });
+    })
+  },
+
+  getRelatedQueryData(coin) {
+    return this.getGoogleTrendRelatedData(coin, 'PastThreeMonths', 'related-queries').then(this.getRelatedKeywords.bind(this));
+  },
+
+  getRelatedTopicsData(coin) {
+    return this.getGoogleTrendRelatedData(coin, 'PastThreeMonths', 'related-topics').then(this.getRelatedKeywords.bind(this));
+  },
+
+  getRelatedKeywords(data) {
+    var rankedList = _.get(data, 'default.rankedList', []);
+    var keywords = [];
+    if (rankedList.length > 0) {
+      keywords = rankedList[0].rankedKeyword;
+    }
+    return keywords;
+  },
+
+  getGoogleTrendRelatedData(coin, timespan, refname) {
+    timespan = timespan || 'PastThreeMonths';
+    refname = refname || 'region-interest';
+    let dataRef = FirebaseApp.database().ref(`/${refname}/${timespan}/`);
+    let results;
+    const ref = dataRef.child(coin);
+    return new Promise(function(resolve, reject) {
+      return ref.once('value').then((snapshot) => {
+        let val = (snapshot.val());
+        try {
+          results = JSON.parse(val);
+        } catch (ex) {
+          console.log('oops', ex)
+        }
+        return resolve(results);
+      });
+    });
+  },
+
   getCoinData(coin, timespan) {
     let dataRef = FirebaseApp.database().ref('/data/' + timespan + '/');
     let dataItems = []
     const ref = dataRef.child(coin);
-    return new Promise(function (resolve, reject) {
+    return new Promise(function(resolve, reject) {
       return ref.once('value').then((snapshot) => {
         let val = (snapshot.val());
         try {
@@ -65,6 +112,21 @@ export default {
         }
         return resolve(dataItems);
       });
+    });
+  },
+
+  getMarketCapTicker() {
+    let api = 'https://api.coinmarketcap.com/v1/ticker/?limit=10';
+    let tickers = ['bitcoin', 'ethereum', 'litecoin'];
+    let prices = {};
+    return Vue.http.get(api).then(function(response) {
+      let results = response.body;
+      _.forEach(results, function(data) {
+        if (_.includes(tickers, data.id)) {
+          prices[data.id] = data;
+        }
+      });
+      return prices;
     });
   }
 }

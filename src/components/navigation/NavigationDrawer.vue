@@ -19,20 +19,11 @@
             <img :src="`./static/${subItem.img}`" :alt="subItem.text">
           </v-avatar>
           <v-list-tile-content>
-            <v-list-tile-title  class="white-link">{{ subItem.text }}</v-list-tile-title>
+            <v-list-tile-title class="white-link">{{ subItem.text }}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list-group>
     </v-list>
-    <!-- <v-subheader class="mt-3 grey--text text--darken-1"></v-subheader>
-
-    <v-list-tile class="mt-3" @click="">
-      <v-list-tile-action>
-        <v-icon color="grey darken-1">add_circle_outline</v-icon>
-      </v-list-tile-action>
-      <v-list-tile-title class="grey--text text--darken-1">Browse Channels</v-list-tile-title>
-    </v-list-tile>
-  -->
   </v-navigation-drawer>
   <v-toolbar color="red" dense fixed clipped-left app>
     <v-icon @click.stop="drawer = !drawer">menu</v-icon>
@@ -40,30 +31,56 @@
       <v-icon class="ml-3 fa-2x">fa-bitcoin</v-icon>
       News and Financial Charts
     </v-toolbar-title>
-    <!--<v-layout row align-center style="max-width: 650px">
-      <v-text-field placeholder="Search..." single-line append-icon="search" :append-icon-cb="() => {}" class="white--text" hide-details></v-text-field>
+    <v-spacer></v-spacer>
+    <v-layout row>
+      <div class="text-xs-right">
+        <span class="margin-right-20">BTC: ${{tickerData.bitcoin.price_usd}}</span>
+        <span class="margin-right-20">Ethereum: ${{tickerData.ethereum.price_usd}}</span>
+        <span class="margin-right-20">Litecoin: ${{tickerData.litecoin.price_usd}}</span>
+      </div>
     </v-layout>
-    -->
   </v-toolbar>
 </div>
 </template>
 
 <script>
-import {
-  Menu
-} from './menu'
+import {Menu} from './menu'
+import DataUtil from '../../services/DataUtil';
 
 export default {
   name: 'NavigationDrawer',
   data: () => ({
     drawer: true,
-    items: Menu
-  })
+    items: Menu,
+    tickerData: {
+      bitcoin: '',
+      ethereum: '',
+      litecoin: ''
+    }
+  }),
+  methods: {
+    loadData() {
+      DataUtil.getMarketCapTicker().then(function(data) {
+        this.tickerData = data;
+        console.log(this.tickerData);
+      }.bind(this));
+    }
+  },
+  mounted() {
+    this.loadData();
+
+    setInterval(function() {
+      this.loadData();
+    }.bind(this), 30000);
+  }
 }
 </script>
 
 <style>
 .navigation-drawer>.list .list--group__container .list__tile--active .list__tile__title.white-link {
   color: whitesmoke;
+}
+.margin-right-20 {
+  margin-right: 20px;
 }
 </style>

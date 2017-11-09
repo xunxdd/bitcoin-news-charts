@@ -72,7 +72,7 @@ export default {
         height: 500,
         margin: {
           top: 20,
-          right: 50,
+          right: 70,
           bottom: 30,
           left: 50
         },

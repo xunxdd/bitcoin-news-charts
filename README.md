@@ -1,6 +1,27 @@
-# bitcoin-news-chart
+# Bitcoin News and Charts
 
-> a collection of cryto currency news and charts
+> Last three month candlesticks charts of Bitcoin, Litecoin and ethereum, including RSI, MACD, Exponential Moving Average (Ema). 
+
+> Last three month google trend analysis (regional, search trend, search queries and topics).
+
+>  Collection of cryto currency news and discussions from CoinDesk, Bitcoin Magzine, CrytoCoin News, Coin Telegraph, News Bitcoin, Bitcoin Subreddit, Crypto-Currency Sub Reddit.
+
+# See it in Action
+
+[Bitcooin News and Charts](https://bitcoin-news-charts.herokuapp.com/#/ "Bitcoin News and Chart")
+
+# Client Side
+
+> The very best Vue.js
+> Financial charts is built using [D3.js] (https://d3js.org/) , [Techan.js] (http://techanjs.org/)
+> Google trend map is using Google chart
+
+# Server Side Data Handling
+Server Side Data is handled using seperate Node.js application. Trading data is from [CoinMarketCap](https://https://coinmarketcap.com/), Google trend data is from [Google Trend Api] (https://www.npmjs.com/package/google-trends-api)
+
+# Coming Next
+Unit tests
+In depth analysis of financial Data and convergence of news, search and trading
 
 ## Build Setup
 
@@ -27,4 +48,3 @@ npm run e2e
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

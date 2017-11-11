@@ -1,5 +1,5 @@
 <template>
-<div id='GoogleTrend-CloseLine-chart' class="financial-chart">
+<div id='GoogleTrend-CloseLine-chart'  class="financial-chart">
 </div>
 </template>
 <script>

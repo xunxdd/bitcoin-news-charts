@@ -30,7 +30,7 @@ export default {
           dataItems = _.get(results, 'default.timelineData', []);
           dataItems = _.map(dataItems, (item) => {
             return {
-              'date': item.formattedTime,
+              'date': item.formattedAxisTime,
               'value': item.value[0]
             }
           });
@@ -43,7 +43,7 @@ export default {
   },
 
   getRegionalInterestData(coin) {
-    return this.getGoogleTrendRelatedData(coin, 'PastThreeMonths', 'region-interest').then(function(data) {
+    return this.getGoogleTrendRelatedData(coin, 'HistoricalAllTime', 'region-interest').then(function(data) {
       var geoMapData = _.get(data, 'default.geoMapData');
       return _.map(geoMapData, function(data) {
         return [data.geoName, data.value[0]];
@@ -52,11 +52,11 @@ export default {
   },
 
   getRelatedQueryData(coin) {
-    return this.getGoogleTrendRelatedData(coin, 'PastThreeMonths', 'related-queries').then(this.getRelatedKeywords.bind(this));
+    return this.getGoogleTrendRelatedData(coin, 'HistoricalAllTime', 'related-queries').then(this.getRelatedKeywords.bind(this));
   },
 
   getRelatedTopicsData(coin) {
-    return this.getGoogleTrendRelatedData(coin, 'PastThreeMonths', 'related-topics').then(this.getRelatedKeywords.bind(this));
+    return this.getGoogleTrendRelatedData(coin, 'HistoricalAllTime', 'related-topics').then(this.getRelatedKeywords.bind(this));
   },
 
   getRelatedKeywords(data) {
@@ -69,7 +69,7 @@ export default {
   },
 
   getGoogleTrendRelatedData(coin, timespan, refname) {
-    timespan = timespan || 'PastThreeMonths';
+    timespan = timespan || 'HistoricalAllTime';
     refname = refname || 'region-interest';
     let dataRef = FirebaseApp.database().ref(`/${refname}/${timespan}/`);
     let results;

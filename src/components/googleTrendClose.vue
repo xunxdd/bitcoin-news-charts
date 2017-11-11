@@ -2,15 +2,15 @@
 <div>
   <v-layout row wrap>
     <v-flex xs12>
-      <h4>{{title}} Google Trend and Price</h4>
-      <h5>({{this.dateSpan.startDate}} - {{this.dateSpan.endDate}})</h5>
+      <h5>{{title}} Google Trend and Price</h5>
+      <h6>({{this.dateSpan.startDate}} - {{this.dateSpan.endDate}})</h6>
     </v-flex>
     <v-flex xs12 sm12>
       <google-trend-close-line :data-set="dataSet" :dimension="dimension" title="bitcoin">
       </google-trend-close-line>
     </v-flex>
     <v-flex xs12 sm12>
-      <h4>{{title}} Google Trend Regional Interest</h4>
+      <h5>{{title}} Google Trend Regional Interest</h5>
       <geo-chart :data="trendData.regional" height="300px" width="960px" display-mode="regional"></geo-chart>
     </v-flex>
     <v-layout row wrap>
@@ -44,8 +44,8 @@ export default {
       console.log(this.coin);
       let coin = this.coin || 'bitcoin';
       this.title = DataUtil.getCoinName(coin);
-      let p1 = DataUtil.getCoinData(coin, 'PastThreeMonths');
-      let p2 = DataUtil.getGoogleTrendData(coin, 'PastThreeMonths', 'trend');
+      let p1 = DataUtil.getCoinData(coin, 'HistoricalAllTime');
+      let p2 = DataUtil.getGoogleTrendData(coin, 'HistoricalAllTime', 'trend');
       var promises = [p1, p2];
       Promise.all(promises).then(this.bindData.bind(this));
       this.fetchRelatedTrendData(coin);
@@ -65,7 +65,6 @@ export default {
         queries: results[1],
         topics: results[2]
       };
-      console.log(this.trendData.topics)
     },
 
     bindData(results) {

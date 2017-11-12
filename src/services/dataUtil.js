@@ -15,7 +15,7 @@ const CoinMap = {
 }
 export default {
   getCoinName(coin) {
-    return CoinMap[coin].Name || '###$$';
+    return _.get(CoinMap, coin + '.Name', _.capitalize(coin.replace('-', ' ')));
   },
 
   getGoogleTrendData(coin, timespan, refname) {

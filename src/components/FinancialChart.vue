@@ -19,6 +19,7 @@
 
 <script>
 import Chart from './charts/chart'
+import _ from 'lodash'
 import {
   CoinData
 } from '../assets/coinData'
@@ -42,6 +43,7 @@ export default {
     },
 
     bindData(data) {
+      console.log(data);
       if (data.length > 0) {
         this.chartData = data;
         this.dateSpan = this.getDateSpan(data);
@@ -49,7 +51,10 @@ export default {
     },
 
     getDateSpan(data) {
-      let len = data.length;
+      let len = _.get(data, 'length', 0);
+      if (len === 0) {
+        return {}
+      }
       return {
         startDate: data[len - 1].Date,
         endDate: data[0].Date

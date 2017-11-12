@@ -48,15 +48,16 @@
 
 <script>
 import {
-  Menu
+  NEWS_MENU,
+  COINS
 } from './menu'
+import _ from 'lodash'
 import DataUtil from '../../services/DataUtil';
 
 export default {
   name: 'NavigationDrawer',
   data: () => ({
     drawer: true,
-    items: Menu,
     tickerData: {
       bitcoin: '',
       ethereum: '',
@@ -64,6 +65,35 @@ export default {
       updated: ''
     }
   }),
+  computed: {
+    items: () => {
+      var chartItems = {
+        icon: 'trending_up',
+        text: 'Financial Chart',
+        active: true,
+        items: []
+      };
+      var trendItems = {
+        icon: 'fa-line-chart',
+        text: 'Google Trend vs Price',
+        active: false,
+        items: []
+      };
+      var coins = _.cloneDeep(COINS);
+      chartItems.items = _.map(coins, (item) => {
+        console.log('chart', item.link)
+        item.link = '/chart/' + item.link;
+        return item;
+      });
+      var coins2 = _.cloneDeep(COINS);
+      trendItems.items = _.map(coins2, (item) => {
+        item.link = '/trend/' + item.link;
+        return item;
+      });
+      var navItems = [chartItems, trendItems, NEWS_MENU];
+      return navItems;
+    }
+  },
   methods: {
     loadData() {
       DataUtil.getMarketCapTicker().then(function(data) {

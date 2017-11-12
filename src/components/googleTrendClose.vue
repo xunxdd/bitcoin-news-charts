@@ -29,6 +29,7 @@
 import GoogleTrendCloseLine from './charts/googleTrendCloseLine'
 import TrendList from './lists/TrendList'
 import DataUtil from '../services/DataUtil'
+import _ from 'lodash'
 
 export default {
   name: 'GoogleTrendAndPriceChart',
@@ -74,6 +75,10 @@ export default {
       };
       if (results[0].length > 0) {
         this.dateSpan = this.getDateSpan(results[0]);
+        this.dataSet.trendData = _.filter(this.dataSet.trendData, (data) => {
+          var trendDate = new Date(data.date);
+          return trendDate >= new Date(this.dateSpan.startDate) && trendDate <= new Date(this.dateSpan.endDate);
+        })
       }
     },
 

@@ -61,7 +61,7 @@ export const NEWS_MENU = {
       img: 'images/coindesk.png'
     },
     {
-      text: 'Bitcoin Magzine',
+      text: 'Bitcoin Magazine',
       link: '/news/bitcoin-magzine',
       img: 'images/bitcoin-magzine.png'
     },

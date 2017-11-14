@@ -17,6 +17,7 @@ module.exports = {
   ],
   // add your custom rules here
   'rules': {
+    'no-multiple-empty-lines': 0,
     'semi': 0,
     'indent': 0,
     'space-before-function-paren': 0,

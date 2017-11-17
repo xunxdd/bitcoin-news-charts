@@ -92,3 +92,18 @@ export const NEWS_MENU = {
     }
   ]
 };
+
+export const TIMELINE_MENU = {
+  icon: 'subscriptions',
+  text: 'Time Line',
+  active: false,
+  items: [{
+    text: 'Time Line',
+    link: '/timeline',
+    img: 'images/coindesk.png'
+  }, {
+    text: 'Indicators',
+    link: '/ohlc',
+    img: 'images/coindesk.png'
+  }]
+}

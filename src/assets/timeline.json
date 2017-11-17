@@ -1,0 +1,1788 @@
+{
+    "timeline":
+    {
+        "headline":"History of Bitcoin",
+        "type":"default",
+		"startDate":"2007",
+		"text":"<i><span class='c1'>The world's first decentralized currency.</span>",
+		"asset":
+        {
+            "media":"assets/img/bitcoin.png",
+            "credit":"",
+            "caption":""
+        },
+        "date": [
+            {
+                "startDate":"2007",
+                "headline":"Satoshi Nakamoto... the legend",
+                "text":"According to legend, Satoshi Nakamoto began working on the Bitcoin concept in 2007. While he is on record as living in Japan, it is speculated that Nakamoto may be a collective pseudonym for more than one person.",
+                "asset":
+                {
+                    "media":"assets/img/shots/satoshi-nakamoto.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2008,8,15",
+                "headline":"An interesting patent application...",
+                "text":"Neal Kin, Vladimir Oksman, and Charles Bry file an application for an encryption patent application. All three individuals deny a connection to Satoshi Nakamoto, the alleged originator of the Bitcoin concept.",
+                "asset":
+                {
+                    "media":"assets/img/shots/patent.jpg",
+                    "credit":"<a href='http://www.google.com/patents/US20100042841' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2008,8,18",
+                "headline":"Bitcoin.org is registered",
+                "text":"Bitcoin.org is born! The domain was registered at anonymousspeech.com, a site that allows users to anonymously register domain names and currently accepts Bitcoins.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoinorg.png",
+                    "credit":"<a href='http://bitcoin.org/' rel='nofollow' target='_blank'>bitcoin.org</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2008,10,31",
+                "headline":"The white paper is published",
+                "text":"Nakamoto publishes a design paper through a metzdowd.com cryptography mailing list that describes the Bitcoin currency and solves the problem of double spending so as to prevent the currency from being copied.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-white-paper.jpg",
+                    "credit":"<a href='http://bitcoin.org/bitcoin.pdf' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2008,11,9",
+                "headline":"The Bitcoin Project hits SourceForge",
+                "text":"The Bitcoin project is registered on SourceForge.net, a community collaboration website focused on the development and distribution of open source software.",
+                "asset":
+                {
+                    "media":"assets/img/shots/sourceforge.jpg",
+                    "credit":"<a href='http://sourceforge.net/projects/bitcoin/' rel='nofollow' target='_blank'>sourceforge</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2009,1,3",
+                "headline":"The Genesis Block is mined",
+                "text":"Block 0, the genesis block, is established at 18:15:05 GMT.",
+                "asset":
+                {
+                    "media":"assets/img/shots/genesis-block.jpg",
+                    "credit":"<a href='http://blockexplorer.com/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2009,1,9",
+                "headline":"Version 0.1 is released",
+                "text":"Version 0.1 of Bitcoin is released. Compiled with Microsoft Visual Studio for Windows, it lacks a command line interface and is so complete that it furthers speculation that it was developed by more than one person (or by an academic with little programming experience and a great deal of theoretical know-how). It includes a Bitcoin generation system that would create a total of 21 million Bitcoins through the year 2040.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-client0.1.png",
+                    "credit":"<a href='http://www.mail-archive.com/cryptography@metzdowd.com/msg10152.html' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2009,1,12",
+                "headline":"The first Bitcoin transaction",
+                "text":"The first transaction of Bitcoin currency, in block 170, takes place between Satoshi and Hal Finney, a developer and cryptographic activist.",
+                "asset":
+                {
+                    "media":"assets/img/shots/first-bitcoin-transaction.png",
+                    "credit":"<a href='http://blockexplorer.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2009,10,5",
+                "headline":"An exchange rate is established",
+                "text":"New Liberty Standard publishes a Bitcoin exchange rate that establishes the value of a Bitcoin at US$1 = 1,309.03 BTC, using an equation that includes the cost of electricity to run a computer that generated Bitcoins.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-exchange-rate.jpg",
+                    "credit":"<a href='http://newlibertystandard.wikifoundry.com/page/2009+Exchange+Rate' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2009,10,12",
+                "headline":"#bitcoin-dev hits freenode IRC",
+                "text":"The #bitcoin-dev channel is registered on freenode IRC, a discussion network for free and open source development communities.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-dev.png",
+                    "credit":"<a href='https://en.bitcoin.it/wiki/IRC_channels' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2009,12,16",
+                "headline":"Version 0.2 is released",
+                "text":"Version 0.2 of Bitcoin is released.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-02.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2009,12,30",
+                "headline":"The difficulty increases",
+                "text":"The first difficulty increase occurs at 06:11:04 GMT.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,2,6",
+                "headline":"A currency exchange is born",
+                "text":"The Bitcoin Market is established by dwdollar as a Bitcoin currency exchange.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoinmarket.jpg",
+                    "credit":"<a href='https://en.bitcoin.it/wiki/Bitcoin_Market' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,2,18",
+                "headline":"Encryption patent is published",
+                "text":"The encryption patent application that was filed on August 15, 2008 by Neal Kin, Vladimir Oksman, and Charles Bry was published.",
+                "asset":
+                {
+                    "media":"assets/img/shots/patent-pub.jpg",
+                    "credit":"<a href='http://appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u=/netahtml/PTO/srchnum.html&r=1&f=G&l=50&s1=20100042841.PGNR.' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,5,22",
+                "headline":"10,000 BTC spent on pizza",
+                "text":"The first, real-world transaction using Bitcoins takes place when a Jacksonville, Florida programmer, Laszlo Hanyecz, offers to pay 10,000 Bitcoins for a pizza on the Bitcoin Forum. At the time, the exchange rate put the purchase price for the pizza at around US$25.",
+                "asset":
+                {
+                    "media":"assets/img/shots/pizza.jpg",
+                    "credit":"<a href='https://bitcointalk.org/index.php?topic=137.msg1195#msg1195' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,7,7",
+                "headline":"Version 0.3 released",
+                "text":"Version 0.3 of Bitcoin is released.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-03.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,7,11",
+                "headline":"Slashdot drives surge in Bitcoin users",
+                "text":"Mention of Bitcoin v0.3 on slashdot brings in a large number of new Bitcoin users.",
+                "asset":
+                {
+                    "media":"assets/img/shots/slashdot.jpg",
+                    "credit":"<a href='http://news.slashdot.org/story/10/07/11/1747245/Bitcoin-Releases-Version-03' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,7,12",
+                "headline":"Bitcoin value increases tenfold",
+                "text":"Over a five day period beginning on July 12, the exchange value of Bitcoin increases ten times from US$0.008/BTC to US$0.080/BTC.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,7,17",
+                "headline":"MtGox is established",
+                "text":"The MtGox Bitcoin currency exchange market is established by Jed McCaleb.",
+                "asset":
+                {
+                    "media":"assets/img/shots/mtgox.jpg",
+                    "credit":"<a href='https://www.mtgox.com/' rel='nofollow' target='_blank'>mtgox</a>",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,7,18",
+                "headline":"OpenGL GPU hash farm and ArtForz",
+                "text":"ArtForz establishes an OpenGL GPU hash farm and generates his first Bitcoin block.",
+                "asset":
+                {
+                    "media":"assets/img/shots/opencl-miner.jpg",
+                    "credit":"<a href='https://en.bitcoin.it/wiki/OpenCL_miner' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,8,15",
+                "headline":"Exploit generates 184 billion Bitcoins",
+                "text":"A vulnerability in the Bitcoin system that causes Bitcoins to be improperly verified is discovered and exploited, resulting in the generation of 184 billion Bitcoins.",
+                "asset":
+                {
+                    "media":"assets/img/shots/exploit-184.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,9,14",
+                "headline":"An offer for CUDA...",
+                "text":"An offer is made by jgarzik, in the name of the Bitcoin Store, to puddinpop to open source their Windows-based CUDA client. The offer was in the form of 10,000 BTC which, at the time, was valued at around US$600 to US$650.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,9,14",
+                "headline":"Block 79,764.",
+                "text":"Split allocation of the generation reward used to mine Block 79,764.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,9,18",
+                "headline":"CUDA becomes open-source",
+                "text":"Under the MIT license, puddinpop releases the source of their Windows-based CUDA client, open sourced by the Bitcoin Store, following a contribution by jgarzik.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2010,9,29",
+                "headline":"Another exploit discovered",
+                "text":"A microtransactions exploit is discovered by kermit, precipitating the release of Version 0.3.13.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,10",
+                "headline":"Financial task force issues warning",
+                "text":"The Financial Action Task Force, an inter-governmental group that develops and promotes policies to prevent money laundering and funding of terrorists, publishes Money Laundering Using New Payment Methods, to warn about the use of digital currencies to finance terrorist groups.",
+                "asset":
+                {
+                    "media":"assets/img/shots/fatf.jpg",
+                    "credit":"<a href='http://www.fatf-gafi.org/media/fatf/documents/reports/ML%20using%20New%20Payment%20Methods.pdf' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,10,1",
+                "headline":"OpenCL miner released",
+                "text":"The first public version of an OpenCL miner is released.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,10,7",
+                "headline":"Stalled Bitcoin value begins climb",
+                "text":"The Bitcoin exchange rate, stalled at US$0.06/BTC for several months, begins to climb.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,10,10",
+                "headline":"MtGox switches to Liberty Reserve",
+                "text":"MtGox changes its main funding option from PayPal to Liberty Reserve.",
+                "asset":
+                {
+                    "media":"assets/img/shots/mtgox-lr.jpg",
+                    "credit":"<a href='https://en.bitcoin.it/wiki/MtGox' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,10,16",
+                "headline":"First escrow transaction takes place",
+                "text":"Bitcoin Forum members Diablo-D3 and nanotube conduct the first recorded escrow trade of Bitcoins with theymos as escrow.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,10,17",
+                "headline":"#bitcoin-otc trading channel opens",
+                "text":"The #bitcoin-otc trading channel is registered on freenode IRC as a marketplace for over-the-counter trading of Bitcoins.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,10,28",
+                "headline":"First ever short sale",
+                "text":"Facilitated by #bitcoin-otc, the first recorded short sale of Bitcoins is initiated in the form of a 100 BTC loan from nanotube to kiba.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,11,6",
+                "headline":"Market cap exceeds $1 million USD",
+                "text":"Calculated by multiplying the number of Bitcoins in circulation by the last trade on MtGox, the Bitcoin economy exceeds US$1 million. The price on MtGox reached US$0.50/BTC.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,12,7",
+                "headline":"Bitcoind compiled for Nokia N900",
+                "text":"Bitcoin Forum member doublec compiles Bitcoind, which was written for the Nokia N900 mobile computer.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,12,8",
+                "headline":"First mobile Bitcoin transaction",
+                "text":"The first portable-to-portable transaction of Bitcoins occurs when ribuck sends doublec 0.42 BTC using Bitcoind.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,12,9",
+                "headline":"Difficulty increases",
+                "text":"The generation difficulty exceeds 10,000",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,12,9",
+                "headline":"First call option contract sold",
+                "text":"The first call option contract for Bitcoins is sold on the #bitcoin-otc market. The transaction occurs between nanotube and sgomick.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2010,9,18",
+                "headline":"Slush's Pool mines its first block",
+                "text":"Bitcoin Pooled Mining (operated by slush), a method by which several users work collectively to mine Bitcoins and share in the benefits, mines its first block.",
+                "asset":
+                {
+                    "media":"assets/img/shots/slushs-pool.jpg",
+                    "credit":"<a href='http://mining.bitcoin.cz/' rel='nofollow' target='_blank'>slush's pool</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,1,1",
+                "headline":"Silk Road opens for business",
+                "text":"Silk Road, a Bitcoin marketplace, launches an illicit marketplace for drug deals, called the eBay for drugs.",
+                "asset":
+                {
+                    "media":"assets/img/shots/silk-road.jpg",
+                    "credit":"<a href='http://www.forbes.com/sites/andygreenberg/2012/08/06/black-market-drug-site-silk-road-booming-22-million-in-annual-mostly-illegal-sales/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,1,2",
+                "headline":"Tonal Bitcoin standardizes its units",
+                "text":"Tonal Bitcoin, designed for those who prefer the Tonal number system, standardizes its units.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,1,8",
+                "headline":"Slush's Pool reaches 10,000 Mhash/s",
+                "text":"Bitcoin Pooled Mining achieves a total of 10,000 Mhash/s.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,1,27",
+                "headline":"Largest trade on #bitcoin-otc occurs",
+                "text":"The largest Bitcoin trade to date occurs on #bitcoin-otc: Three Zimdollars (Zimbabwe notes that are worth one-hundred trillion dollars each) are traded for 12 BTC.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,1,28",
+                "headline":"25% of total Bitcoins generated",
+                "text":"With the generation of Block 105000, 5.25 million Bitcoins have been generated, totalling more than 25 percent of the projected total of almost 21 million.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,2,9",
+                "headline":"Bitcoin reaches parity with US dollar",
+                "text":"Bitcoin touches US$1.00/BTC at MtGox, reaches parity with the US dollar for the first time.",
+                "asset":
+                {
+                    "media":"assets/img/shots/parity.jpg",
+                    "credit":"<a href='http://news.slashdot.org/story/11/02/10/189246/online-only-currency-bitcoin-reaches-dollar-parity' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,2,10",
+                "headline":"Bitcoin buzz puts load on Bitcoin.org",
+                "text":"Following coverage of US$/BTC parity being reached on Slashdot and Hacker News, along with buzz on Twitter, the Bitcoin.org website struggles under increased traffic.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,2,14",
+                "headline":"Vehicle offered for Bitcoins",
+                "text":"An Australian member of the Bitcoin Forum attempts to sell his 1984 Celica Supra for 3000 BTC, and becomes the first person to offer a vehicle in exchange for Bitcoins.",
+                "asset":
+                {
+                    "media":"assets/img/shots/toyota-bitcoins.jpg",
+                    "credit":"<a href='https://bitcointalk.org/index.php?topic=3485.0' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,2,25",
+                "headline":"WeUseCoins.com is created",
+                "text":"WeUseCoins.com is registered and built into a Bitcoin resource and creates one of the most watched videos on Bitcoin.",
+                "asset":
+                {
+                    "media":"http://www.youtube.com/watch?v=Um63OQz3bjo",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,3",
+                "headline":"Bitcoin Market gets major update",
+                "text":"A major update to the Bitcoin Market website reduces the minimum trade size, permits trading 24x7, and helps to ensure that payments are made for executed trades.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,3,6",
+                "headline":"MtGox is sold, botnet joins network?",
+                "text":"Jed McCaleb sells MtGox to Japan’s Tibanne Company. A new high of nearly 900Ghash/sec total Bitcoin network computation speed is reached. Shortly thereafter, it drops to 500Ghash/sec. It is speculated that the reduction is the result of a supercomputer or bot-net joining the network.",
+                "asset":
+                {
+                    "media":"assets/img/shots/mm.jpg",
+                    "credit":"source: <a href='http://en.wikipedia.org/wiki/Mt.Gox#Tibanne' rel='nofollow' target='_blank'>1</a> <a href='http://bitcoin.atspace.com/mysteryminer.html' rel='nofollow' target='_blank'>2</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,3,18",
+                "headline":"A six-week slow hits the exchanges",
+                "text":"A six-week low of nearly US$0.70/BTC exchange rate is reached after a decline following the US$1.00/BTC high on February 9 and a short burst of sales of Bitcoin at lower prices (that may have been automated).",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,3,25",
+                "headline":"Second largest decrease in difficulty",
+                "text":"The second, and largest, decrease in difficulty is recorded at nearly 10 percent.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,3,27",
+                "headline":"Britcoin opens for trading",
+                "text":"Britcoin opens and becomes the first market for the exchange of Bitcoins and the British Pound Sterling (GBP)",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,3,31",
+                "headline":"Bitcoin Brasil opens",
+                "text":"Bitcoin Brasil opens and becomes the first market for the exchange of Bitcoins and Brazilian Reals.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,4,5",
+                "headline":"Bitmarket.eu opens its doors",
+                "text":"BitMarket.eu opens and becomes the first market for the exchange of Bitcoins and the Polish złoty, the Euro, and several other currencies.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitmarket.jpg",
+                    "credit":"<a href='https://en.bitcoin.it/wiki/BitMarket.eu' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,4,12",
+                "headline":"First put option sold",
+                "text":"The first Bitcoin put option contract is sold on #bitcoin-otc.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,4,16",
+                "headline":"TIME publishes article on Bitcoin",
+                "text":"TIME magazine publishes an article about Bitcoin, Online Cash Bitcoin Could Challenge Governments, Banks.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,4,23",
+                "headline":"Bitcoin passes parity with Euro",
+                "text":"On MtGox, the BTC/USD exchange rate reaches and passes parity with the Euro and the British Sterling Pound. The value of Bitcoin money stock passes US$10 million.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,4,27",
+                "headline":"VirWoX integrates Bitcoin",
+                "text":"VirWoX begins trading Bitcoins against Second Life Lindens and becomes the first market to trade Bitcoins against a virtual currency.",
+                "asset":
+                {
+                    "media":"assets/img/shots/virwox.jpg",
+                    "credit":"<a href='https://www.virwox.com/' rel='nofollow' target='_blank'>virwox</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,4,30",
+                "headline":"Difficulty surpasses 100,000",
+                "text":"The Bitcoin generation difficulty surpasses 100,000.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,2",
+                "headline":"Bitcoin reaches $10 on MtGox",
+                "text":"At MtGox, the exchange rate touches US$10 per BTC.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,3",
+                "headline":"Tonal Bitcoin reaches parity at .01",
+                "text":"Tonal Bitcoin touches US$0.01 per TBC at Bitcoin Market, reaching parity with the U.S. cent for the first time.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,4",
+                "headline":"Bitcoin Market drops PayPal",
+                "text":"Bitcoin Market discontinues PayPal trading due to fraud.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,8",
+                "headline":"Bitcoin reaches all-time high",
+                "text":"The price of a Bitcoin on MtGox reaches an all-time high of US$31.91 with a market capitalization of around US$206 million.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,12",
+                "headline":"The Great Bubble of 2011",
+                "text":"In the largest percentage price decrease to-date, the MtGox Bitcon exchange rate plummeted to nearly US$10, just four days after its peak at US$31.91. The incident became known as the Great Bubble of 2011.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,13",
+                "headline":"Largest ever Bitcoin theft reported",
+                "text":"Bitcoin Forum member, allinvain, claims that 25,000 BTC were stolen from his wallet. At the time, the exchange rate put the amount close to US$375,000.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,14",
+                "headline":"WikiLeaks starts accepting Bitcoin",
+                "text":"WikiLeaks begins accepting anonymous Bitcoin donations.",
+                "asset":
+                {
+                    "media":"assets/img/shots/wikileaks.jpg",
+                    "credit":"<a href='https://twitter.com/wikileaks/status/80774521350668288' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,19",
+                "headline":"Major breach at MtGox",
+                "text":"MtGox suffers a significant breach of security that results in fraudulent trading and requires the site to be shut down for seven days. The breach compromises the MtGox database with a leak of the user table that contains user names, email addresses, and password hashes of 60,000 accounts. </br></br>An admin account was accessed from which sell orders were issued for hundreds of thousands of Bitcoins, which forced the MtGox price down to US$17.51 to US$0.01 per Bitcoin.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,19",
+                "headline":"TradeHill and Britcoin halt trading",
+                "text":"Trading halts at TradeHill and Britcoin while security measures are reviewed. Users that were registered at MyBitcoin with the same username as on MtGox had their passwords hacked and balances stolen from around 600 MyBitcoin accounts, with one user losing more than 2,000 BTC.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,20",
+                "headline":"EFF stops accepting Bitcoin",
+                "text":"The Electronic Frontier Foundation (EFF) discontinues the acceptance of donations in the form of Bitcoins for reasons of legal uncertainties.",
+                "asset":
+                {
+                    "media":"assets/img/shots/eff.jpg",
+                    "credit":"<a href='https://www.eff.org/deeplinks/2011/06/eff-and-bitcoin' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,24",
+                "headline":"Difficulty passes 1 million",
+                "text":"With Block 133056, the Bitcoin generation difficulty passes 1 million for the first time.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,6,29",
+                "headline":"BitPay launches e-wallet",
+                "text":"BitPay launches as the first smartphone e-wallet for Bitcoins.",
+                "asset":
+                {
+                    "media":"https://www.youtube.com/watch?v=QHwB5fOvyr0",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,7,19",
+                "headline":"First NFC Bitcoin transaction",
+                "text":"Mike Hearn goes on record, saying that his manager Tadek is the world’s first recipient of Bitcoins via NFC at 4:05 p.m. CET.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,7,20",
+                "headline":"Bitcoin app for iPad released",
+                "text":"Intervex Digital releases the first Bitcoin application to be developed for the Apple iPad, Bitcoins Mobile.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,7,26",
+                "headline":"Bitomat loses 17,000 Bitcoins",
+                "text":"Poland-based Bitomat, the world’s third largest Bitcoin exchange, loses access to its wallet.dat file and the 17,000 Bitcoins they are holding for clients.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,8,5",
+                "headline":"MyBitcoin loses 150,000 Bitcoins",
+                "text":"A week after being hacked, a MyBitcoin spokesperson explains how the Bitcoin transaction processor lost over 150,000 Bitcoins, worth over US$2 million at the time.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,8,20",
+                "headline":"Bitcoin Conference and World Expo",
+                "text":"The first Bitcoin Conference and World Expo was held in New York City, NY.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,8,23",
+                "headline":"P2Pool mines its first block",
+                "text":"The first peer-to-peer decentralized pool, P2Pool, mines its first Bitcoin mainnet block (Block 142,312).",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,8,30",
+                "headline":"Back-to-back drop in difficulty",
+                "text":"The first back-to-back drop in difficulty adjustment occurs at block 143,136.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,9,6",
+                "headline":"Casascius coins mint physical Bitcoins",
+                "text":"Mike Caldwell begins minting physical Bitcoins, naming the coins Casacius Coins.",
+                "asset":
+                {
+                    "media":"assets/img/shots/casacius-coin.jpg",
+                    "credit":"<a href='https://bitcointalk.org/index.php?topic=41892.0' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,11,15",
+                "headline":"(CVE-2011-4447)",
+                "text":"The first CVE was assigned to a Bitcoin client exploit (CVE-2011-4447).",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,11,25",
+                "headline":"2011 Bitcoin & Future Technology European Conference",
+                "text":"The 2011 Bitcoin & Future Technology European Conference is held in Prague, Czech Republic.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2011,12,12",
+                "headline":"Largest BTC fee in a single transaction",
+                "text":"Becoming the largest amount of fees in a single transaction and the most fees in a single block, 171 BTC in fees are transacted in block 157235.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,2,13",
+                "headline":"TradeHill shuts down",
+                "text":"The second largest Bitcoin exchange in the world, TradeHill, shuts down, citing regulatory problems and the loss of US$100,000 (following a dispute with a payment processor) as contributing factors.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,2,27",
+                "headline":"Bitcoin Magazine launches",
+                "text":"Bitcoin Magazine launches with articles about Bitcoin and crypto-currency.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,3,1",
+                "headline":"Linode hacked, 46,000 BTC stolen",
+                "text":"A security breach at Linode, a website hosting company, results in the largest theft of Bitcoins recorded to date. More than 46,000 BTC are stolen, valued at over US$228,000.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,4,1",
+                "headline":"P2SH goes live",
+                "text":"Pay-to-script-hash (P2SH), as defined through BIP 0016, goes live.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,5,1",
+                "headline":"Bitcoin Magazine gets print edition",
+                "text":"Bitcoin Magazine publishes its first printed issue.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,5,8",
+                "headline":"SatoshiDICE responsible for over half of Bitcoin transaction volume",
+                "text":"SatoshiDICE becomes responsible for more than half the Bitcoin blockchain transaction volume.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,5,9",
+                "headline":"FBI report on Bitcoin leaked",
+                "text":" An April 24, 2012 FBI report entitled Bitcoin Virtual Currency: Unique Features Present Distinct Challenges for Deterring Illicit Activity is leaked and brought attention to concerns that Bitcoin payment methods could facilitate illegal transactions for weapons and narcotics.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,5,11",
+                "headline":"Bitcoinica hacked",
+                "text":"Bitcoin exchange, Bitcoinica, is taken down following after hack results in a loss of over 18,000 Bitcoins, valued at approximately US$90,000.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,6,",
+                "headline":"Coinbase is founded",
+                "text":"Coinbase, a bitcoin wallet and platform, is founded in San Francisco, California.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,6,3",
+                "headline":"Block 181919",
+                "text":"Block 181919, with 1322 transactions, is the largest block to-date.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,7",
+                "headline":"Bitcoin statrtup incubator launched",
+                "text":"BoostVC, a Bitcoin startup incubator, is launched by Adam Draper.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,8,6",
+                "headline":"Complaint filed against Bitcoinica",
+                "text":"Four Bitcoiners file a complaint against Bitcoinica with accusations of breach of contract, negligence, and three more counts.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,8,20",
+                "headline":"BitInstant plans for debit cards",
+                "text":"Charlie Shrem announces plans to introduce a Bitcoin debit card through BitInstant, a Bitcoin transfer service.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,9",
+                "headline":"KnCMiner is conceived",
+                "text":"KnCMiner, a Swedish joint venture to develop Bitcoin mining hardware, is conceived.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,9,3",
+                "headline":"Bitfloor hacked for 24,000 BTC",
+                "text":"The fourth largest US Bitcoin exchange, Bitfloor, is hacked and loses 24,000 BTC (valued at approximately US$250,000 when the theft took place), which was the majority of the on-hand Bitcoins. Compromised servers result in access to encrypted backup files of wallet keys. All exchange operations are paused.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,9,15",
+                "headline":"London 2012 Bitcoin Conference",
+                "text":"The London 2012 Bitcoin Conference is held.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,9,24",
+                "headline":"Bitcoin Savings and Trust Investigated for running Ponzi scheme",
+                "text":"Phillip Moustakis, a Senior Attorney in the Enforcement Division of the  U.S. Securities and Exchange Commission, sends an email that announces an investigation of Bitcoin Savings and Trust after allegations were made that the Ponzi scheme decreased the value of Bitcoins by as much as 30 percent.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,9,27",
+                "headline":"Bitcoin Foundation begins",
+                "text":"The Bitcoin Foundation is formed, implementing a core development team for the protocol and a body to oversee the digital currency.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,11,15",
+                "headline":"WordPress.com accepts Bitcoin",
+                "text":"WordPress.com announces that it accepts Bitcoins as a form of payment for users to purchase upgrades.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,11,28",
+                "headline":"Halving Day",
+                "text":"On Halving Day, Block 210,000 is the first with a block reward subsidy of 25 BTC.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2012,12,6",
+                "headline":"Bitcoin Central licensed as bank",
+                "text":"The first Bitcoin exchange to be licensed as a European bank is Bitcoin Central, operating within the European regulatory framework.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,1,22",
+                "headline":"BitPay surpasses 10,000 transactions",
+                "text":"BitPay, a Bitcoin payment processing company, announces that it has surpassed 10,000 Bitcoin transactions for its merchants, with no cases of payment fraud reported.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,2",
+                "headline":"PizzaForCoins.com opens",
+                "text":"Matthew Birkenshaw and Riley Alexander, founders of GiftsForCoins.com, begin a new startup, PizzaForCoins.com, a service that acts as a middleman to allow users to order pizza with Bitcoins in exchange for a small BTC fee.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,2,9",
+                "headline":"Mega starts accepting Bitcoin",
+                "text":"Kim Dotcom announces that his cloud storage service, Mega, will begin accepting Bitcoin payments through bitvoucher.co, its newest reseller.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,2,19",
+                "headline":"Version 0.8 released",
+                "text":"Version 0.8 of the Bitcoin client is released. It features Bloom Filtering and improved download speeds.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,2,21",
+                "headline":"Internet Archive accepts Bitcoins",
+                "text":"Internet Archive begins accepting BTC donations so that its employees can be paid in Bitcoins.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,2,22",
+                "headline":"Bitcoin goes to $30USD",
+                "text":"The trade value of a Bitcoin reaches US$30 for the first time since 2011.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,2,28",
+                "headline":"First all-time high in 601 days",
+                "text":"With the first all-time high in 601 days, the MtGox exchange rate breaks the June 8, 2011 peak of US$31.91.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,3,8",
+                "headline":"BitInstant hacked, loses $12,000",
+                "text":"Bitcoin brokerage firm, BitInstant, acknowledges that a hack of its system resulted in the theft of nearly US$12,000 in Bitcoins.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,3,11",
+                "headline":"Glitch causes halt in transactions",
+                "text":"A significant glitch that involves two different versions of the Bitcoin software forces a halt in transactions that results in a sharp sell-off and a 23 percent drop in value to US$37. Later that evening, the exchange rate recovered much of its value.",
+                "asset":
+                {
+                    "media":"assets/img/shots/glitch.jpg",
+                    "credit":"<a href='http://arstechnica.com/business/2013/03/major-glitch-in-bitcoin-network-sparks-sell-off-price-temporarily-falls-23/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,3,12",
+                "headline":"A hard fork occurs on the blockchain",
+                "text":"A protocol rule that was previously undiscovered results in a hard fork of the 0.8.0 reference client.",
+                "asset":
+                {
+                    "media":"assets/img/shots/blockchain-fork.jpg",
+                    "credit":"<a href='http://www.dailydot.com/business/bitcoin-value-spike-bubble-cyrpus-spain/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,3,17",
+                "headline":"Bitcoin helps the homeless",
+                "text":"Pensacola homeless shelter, Sean’s Outpost, ran by Jason King, begins accepting Bitcoin donations.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bithoc.jpg",
+                    "credit":"<a href='http://seansoutpost.com/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,3,17",
+                "headline":"Let's Talk Bitcoin! airs first episode",
+                "text":"The audio show, Let’s Talk Bitcoin! is launched by Adam B. Levine with its first episode, and was later co-hosted by Andreas M. Antonopoulos and Stephanie Murphy, PhD.",
+                "asset":
+                {
+                    "media":"https://soundcloud.com/mindtomatter/the-controlled-demolition-of",
+                    "credit":"<a href='http://letstalkbitcoin.com/' rel='nofollow' target='_blank'>letstalkbitcoin.com</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,3,18",
+                "headline":"FinCEN defines stance on Bitcoin",
+                "text":"The Financial Crimes Enforcement Network (FinCEN) of the United States Department of the Treasury publishes its Application of FinCEN's Regulations to Persons Administering, Exchanging, or Using Virtual Currencies, which defines its position on virtual currencies.",
+                "asset":
+                {
+                    "media":"assets/img/shots/fincen.jpg",
+                    "credit":"<a href='http://www.fincen.gov/news_room/nr/html/20130318.html' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,3,21",
+                "headline":"Bitcoin spikes to $74.90",
+                "text":"The value of Bitcoin spikes after two days of increasing nearly 70 percent, reaching a high of US$74.90.",
+                "asset":
+                {
+                    "media":"assets/img/shots/goxchart.jpg",
+                    "credit":"<a href='http://www.dailydot.com/business/bitcoin-value-spike-bubble-cyrpus-spain/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,3,28",
+                "headline":"Market cap reaches $1 billion",
+                "text":"The total Bitcoin market cap passes US$1 billion.",
+                "asset":
+                {
+                    "media":"assets/img/shots/one-billion.png",
+                    "credit":"<a href='http://www.theverge.com/2013/3/30/4164634/total-bitcoin-value-passes-1-billion' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,4,1",
+                "headline":"Bitcoin surpasses $100",
+                "text":"The value of Bitcoin on MtGox and other exchanges surpasses US$100.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-chart.jpg",
+                    "credit":"<a href='http://www.dailydot.com/business/bitcoin-100-1-billion-invest/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,4,10",
+                "headline":"Bitcoin Bubbles",
+                "text":"Bitcoin hits an all-time high of US$266, up from only $13 the year before.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-timeline-april.jpg",
+                    "credit":"<a href='http://www.coindesk.com/bitcoin-price-all-time-high/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,4,20",
+                "headline":"Bitcoin Crashes",
+                "text":"Bitcoin Central is hacked, with hackers making away with “a few hundred” Bitcoins that the site’s owners agreed to fully cover.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-crash.jpg",
+                    "credit":"<a href='http://www.theguardian.com/technology/2013/apr/10/bitcoin-new-high-losing-160' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,5,23",
+                "headline":"Bitcoin Central gets hacked",
+                "text":"Bitcoin Central is hacked, with hackers making away with “a few hundred” Bitcoins that the site’s owners agreed to fully cover.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-central-hacked.jpg",
+                    "credit":"<a href='http://mineforeman.com/2013/04/25/bitcoin-central-hacked-again/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,5,1",
+                "headline":"Gaming company caught secretly mining Bitcoins",
+                "text":"Online gaming company ESEA is called out for secretly using customer computers to mine Bitcoins.",
+                "asset":
+                {
+                    "media":"assets/img/shots/esea.jpg",
+                    "credit":"<a href='http://play.esea.net/index.php?s=forums&d=topic&id=492102' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,5,1",
+                "headline":"Coindesk is launched by Spotify investor",
+                "text":"Coindesk, a bitcoin-focused resource and news website is launched by Shakil Khan, an angel investor and advisor to Spotify.",
+                "asset":
+                {
+                    "media":"assets/img/shots/coindesk.png",
+                    "credit":"<a href='http://coindesk.com/' rel='nofollow' target='_blank'>coindesk.com</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,5,2",
+                "headline":"Coinlab files lawsuit against MtGox",
+                "text":"Coinlab files a lawsuit against MtGox, alleging multiple counts of breach of contract that resulted in US$75 million in damages.",
+                "asset":
+                {
+                    "media":"assets/img/shots/mtgox-vs-coinlab.jpg",
+                    "credit":"<a href='http://news.cnet.com/8301-1023_3-57582688-93/bitcoin-exchange-partnership-dissolves-with-lawsuit/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,5,2",
+                "headline":"First Bitcoin ATM unveiled",
+                "text":"The first Bitcoin ATM in the world is debuted in San Diego, California.",
+                "asset":
+                {
+                    "media":"http://www.youtube.com/watch?v=ZqEdBCKFPAo",
+                    "credit":"<a href='http://www.10news.com/news/worlds-first-bitcoin-atm-coming-to-san-diego-050213' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,5,7",
+                "headline":"Coinbase receives $5 million in funding",
+                "text":"Coinbase announces a US$5 million investment from funding that is led by Union Square Ventures, becomes the largest funding of a Bitcoin startup to-date.",
+                "asset":
+                {
+                    "media":"assets/img/shots/coinbase-funding.jpg",
+                    "credit":"<a href='http://blogs.wsj.com/venturecapital/2013/05/07/coinbase-nabs-5m-in-biggest-funding-for-bitcoin-startup/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,5,14",
+                "headline":"MtGox funds seized by Homeland",
+                "text":"The United States Department of Homeland Security seizes over US$2.9 million from a Dwolla account that belonged to a subsidiary of MtGox because it allegedly “failed to register as a ‘money transmitting business’ in accordance with 18 U.S. Code 1960.”",
+                "asset":
+                {
+                    "media":"assets/img/shots/feds.jpg",
+                    "credit":"<a href='http://www.pcworld.com/article/2038858/mt-gox-accused-of-violating-us-money-transfer-regulations.html' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,5,18",
+                "headline":"PrimeDice.com launches online casino",
+                "text":"PrimeDice.com launches as an online casino platform that accepts Bitcoin wagers.",
+                "asset":
+                {
+                    "media":"assets/img/shots/primedice.jpg",
+                    "credit":"<a href='https://primedice.com/' rel='nofollow' target='_blank'>primedice.com</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,6,10",
+                "headline":"Life on Bitcoin",
+                "text":"Newlyweds Beck and Craig launch a Kickstarter campaign to fund a full-length documentary called Life on Bitcoin.",
+                "asset":
+                {
+                    "media":"http://www.youtube.com/watch?v=xRtC_SZfSk8",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,6,26",
+                "headline":"Bitcoin-focused web hosting provider opens for business",
+                "text":"BitcoinWebHosting.net launches to offer performance web hosting solutions for the Bitcoin community, offering multiple hosting plans, domain registration and DDoS protection, with payment in Bitcoin.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-web-hosting.jpg",
+                    "credit":"<a href='http://bitcoinwebhosting.net/' target='_blank'>bitcoinwebhosting.net</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,7,1",
+                "headline":"Winklevoss Bitcoin Trust filed",
+                "text":"Winklevoss Bitcoin Trust is filed with the U.S. Securities Exchange Commission (SEC) by Tyler and Cameron Winkelvoss. According to the twins that are known for their legal dispute with Facebook founder Mark Zuckerberg, the Exchange Traded Fund (ETF) is “designed for investors seeking a cost-effective and convenient means to gain exposure to Bitcoins with minimal credit risk,” amidst mixed reactions.",
+                "asset":
+                {
+                    "media":"assets/img/shots/winklevoss.jpg",
+                    "credit":"<a href='http://www.sec.gov/Archives/edgar/data/1579346/000119312513279830/d562329ds1.htm' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,8,6",
+                "headline":"Bitcoin ruled currency by Texas judge",
+                "text":"In response to a claim by Trendon Shavers, founder of Texas-based Bitcoin Savings & Trust, that Bitcoins are not real money in an attempt to sidestep SEC charges of misappropriation of funds, federal Magistrate Judge Amos Mazzant of the Eastern District of Texas rules that “Bitcoin is a currency or form of money, and investors wishing to invest in BTCST provided an investment of money.”",
+                "asset":
+                {
+                    "media":"assets/img/shots/texas-judge.jpg",
+                    "credit":"<a href='http://www.courthousenews.com/2013/08/06/Bitcoin.pdf' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,8,9",
+                "headline":"Bloomberg gets Bitcoin ticker",
+                "text":"The Bitcoin ticker arrives on the Bloomberg terminal so that Bloomberg employees can track the value of BTC under XBT Currency.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bloomberg-bitcoin-ticker.jpg",
+                    "credit":"<a href='http://btcgeek.com/bitcoin-ticker-arrives-on-bloomberg/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,8,12",
+                "headline":"22 Bitcoin companies subpoenaed",
+                "text":"The New York State Department of Financial Services (NYSDFS) issues a subpoena to 22 companies and investors that are involved with digital currencies to investigate the possibility that Bitcoins are being used for illicit activities and determine the necessity of regulatory action. The NYSDFS also wanted to ensure that funds are “safe and sound” after having received consumer complaints.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-subpoenaed.jpg",
+                    "credit":"<a href='http://www.forbes.com/sites/kashmirhill/2013/08/12/every-important-person-in-bitcoin-just-got-subpoenaed-by-new-yorks-financial-regulator/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,8,20",
+                "headline":"Bitcoin ruled private money in Germany",
+                "text":"The German Federal Ministry of Finance announces that it recognizes Bitcoin as a form of private money, or a “unit of account,” and allows its use in commercial and private sales. Bitcoins become tax exempt when held for longer than one year.",
+                "asset":
+                {
+                    "media":"assets/img/shots/german_flag.png",
+                    "credit":"<a href='http://www.zdnet.com/in-germany-bitcoins-are-officially-recognised-as-private-money-7000019628/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,8,21",
+                "headline":"Reddit raises donations for Sean's Outpost",
+                "text":"Reddit user, hardleft121 (a.k.a. Greg), posts a plea to garner support for Sean’s Outpost, a homeless shelter in Pensacola, Florida that was funded by Bitcoin and Litecoin donations. The campaign raises more than 32 BTC valued at US$4,000.",
+                "asset":
+                {
+                    "media":"assets/img/shots/reddit-fundraiser.jpg",
+                    "credit":"<a href='http://btcbible.com/redditors-raise-bitcoins-for-charity/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,8,28",
+                "headline":"Robocoin starts accepting pre-orders",
+                "text":"RoboCoin begins accepting pre-orders for its US$20,000 ATM that allows users to trade Bitcoins for other currencies.",
+                "asset":
+                {
+                    "media":"assets/img/shots/robocoins.jpg",
+                    "credit":"<a href='https://robocoinkiosk.com/' rel='nofollow' target='_blank'>robocoin</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,9,9",
+                "headline":"Sean's Outpost announces Satoshi Forest",
+                "text":"Jason King, founder of Sean’s Outpost, a Bitcoin-funded homeless shelter in Pensacola, announces plans to build a nine-acre sanctuary in Florida for the homeless that was dubbed Satoshi Forest, to be funded by Bitcoin donations.",
+                "asset":
+                {
+                    "media":"assets/img/shots/satoshi-forest.jpg",
+                    "credit":"<a href='http://bitcoinmagazine.com/6939/seans-outpost-announces-satoshi-forest/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,9,10",
+                "headline":"MtGox countersues Coinlab",
+                "text":"MtGox demands the return of US$5 million from Coinlab in a countersuit, claiming that the funds belong to MtGox customers.",
+                "asset":
+                {
+                    "media":"assets/img/shots/mtgox-coinlab.jpg",
+                    "credit":"<a href='http://news.cnet.com/8301-1023_3-57603194-93/bitcoin-exchange-mt-gox-sues-for-return-of-$5m-from-coinlab/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,9,14",
+                "headline":"PrimeDice.com makes $15 million in 3 months",
+                "text":"PrimeDice.com announces that it has generated more than US$15 million of turnover during its first three months of operation.",
+                "asset":
+                {
+                    "media":"assets/img/shots/primedice-profit.jpg",
+                    "credit":"<a href='http://www.myprgenie.com/view-publication/primedicecom-bitcoin-dice-platform-generates-over-15-million-usd-of-turnover-in-first-three-months-of-operation' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,10,2",
+                "headline":"FBI shuts down Silk Road",
+                "text":"FBI shuts down infamous online drug marketplace Silk Road, seizing 3.6 million dollars worth of bitcoins.",
+                "asset":
+                {
+                    "media":"assets/img/shots/silk-road-busted.jpg",
+                    "credit":"<a href='http://nation.time.com/2013/10/02/alleged-silk-road-proprietor-ross-william-ulbricht-arrested-3-6m-in-bitcoin-seized/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,10,2",
+                "headline":"Bitcoin price drops after Silk Road closure, recovers",
+                "text":"Bitcoin price drops from $139/bitcoin to $109.71/bitcoin in less than three hours in response to Silk Road shutdown. It then recovers to $128.",
+                "asset":
+                {
+                    "media":"assets/img/shots/btc-silkroad-drop.jpg",
+                    "credit":"<a href='http://www.wired.com/wiredenterprise/2013/10/bitcoin-market-drops-600-million-on-silk-road-bust/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,10,2",
+                "headline":"BitcoinTalk.org hacked",
+                "text":"Bitcointalk.org suffers a hack that exposes users' personal messages, e-mails, and password data. Visitors are greeted by cartoon images of missiles that appear over Tchaikovsky's classical music opus 1812 Overture.",
+                "asset":
+                {
+                    "media":"https://www.youtube.com/watch?v=3T-VYiTs34s",
+                    "credit":"<a href='http://arstechnica.com/security/2013/10/bitcoin-talk-forum-hacked-hours-after-making-cameo-in-silk-road-takedown/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,10,14",
+                "headline":"Baidu begins accepting Bitcoin",
+                "text":"China’s largest search engine Baidu becomes the first service of its kind to accept Bitcoin.",
+                "asset":
+                {
+                    "media":"assets/img/shots/baidu.jpg",
+                    "credit":"<a href='http://rt.com/news/china-baidu-accept-bitcoin-276/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,10,31",
+                "headline":"BitMarket.eu closes the doors",
+                "text":"BitMarket.eu closes the doors citing limited funding and resources. Last message on site directs inquiries to www.bitalo.com, an independent investment group.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitmarket-closes.jpg",
+                    "credit":"<a href='http://bitmarket.eu/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,11,6",
+                "headline":"Bitcoin sets new all-time high",
+                "text":"The price of the Bitcoin breaks record set in April 2013, despite the Silk Road bust and fears over security, reaching US$269 per bitcoin.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"<a href='http://www.theguardian.com/technology/2013/nov/06/bitcoin-price-hits-all-time-high-of-269' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,11,10",
+                "headline":"Subway starts accepting Bitcoin",
+                "text":"A Subway restaurant in Allentown, Pennsylvania begins accepting Bitcoin, becoming the first Subway in the U.S. to do so.",
+                "asset":
+                {
+                    "media":"https://www.youtube.com/watch?v=bq2r42Xi96A",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,11,17",
+                "headline":"Bitcoin doubles",
+                "text":"Bitcoin price hits a landmark figure at 11.50am GMT on 17 November, reaching US$503.10 on Mt. Gox.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,11,18",
+                "headline":"Beyond Silk Road: Potential Risks, Threats, and Promises of Virtual Currencies",
+                "text":"Senate hearing titled Beyond Silk Road: Potential Risks, Threats and Promises of Virtual Currencies discusses legitimacy and challenges of virtual currencies.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"<a href='http://www.hsgac.senate.gov/hearings/beyond-silk-road-potential-risks-threats-and-promises-of-virtual-currencies' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,11,19",
+                "headline":"Bitcoin goes above $1000",
+                "text":"Bitcoin price surges to a record of US$1242 after Senate hearings.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,11,21",
+                "headline":"Cyprus university begins accepting Bitcoin",
+                "text":"University of Nicosia in Cyprus becomes first university to accept Bitcoin for tuition.",
+                "asset":
+                {
+                    "media":"assets/img/shots/nicosia.jpg",
+                    "credit":"<a href='http://www.unic.ac.cy/node/112137' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,11,22",
+                "headline":"Space travel becomes possible with Bitcoin",
+                "text":"Richard Branson’s Virgin Galactic begins accepting Bitcoin for space travel.",
+                "asset":
+                {
+                    "media":"assets/img/shots/virgin-galactic.jpg",
+                    "credit":"<a href='<a href='http://www.virgin.com/richard-branson/bitcoins-in-space' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,11,27",
+                "headline":"Shopify joins Bitcoin",
+                "text":"Shopify officially integrates bitcoin as a payment option for its 70,000+ merchants.",
+                "asset":
+                {
+                    "media":"assets/img/shots/shopify-bitcoin.jpg",
+                    "credit":"<a href='http://www.shopify.com/blog/10446157-shopify-merchants-can-now-accept-bitcoin#axzz2rjOu9w2H' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,11,29",
+                "headline":"Bitcoin Black Friday",
+                "text":"Bitcoin Black Friday hosts first annual Black Friday event to highlight deals from merchants and businesses accepting Bitcoin.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitcoin-black-friday.jpg",
+                    "credit":"<a href='http://www.bitcoinblackfriday.com/' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,12,2",
+                "headline":"The biggest heist in history",
+                "text":"96,000 Bitcoins are stolen from Sheep Marketplace, an online drug site, while the internet watches the thief move the funds wallet to wallet.",
+                "asset":
+                {
+                    "media":"assets/img/shots/sheep-marketplace.jpg",
+                    "credit":"<a href='http://www.businessinsider.com/220-million-sheep-marketplace-bitcoin-theft-chase-2013-12' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,12,5",
+                "headline":"China's Central Bank bans Bitcoin transactions",
+                "text":"China’s central bank bars financial institutions from handling Bitcoin transactions, causing a price drop of more than 20 percent to below $1,000.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bank-of-china-bitcoin.jpg",
+                    "credit":"<a href='http://www.bloomberg.com/news/2013-12-05/china-s-pboc-bans-financial-companies-from-bitcoin-transactions.html' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,12,6",
+                "headline":"Baidu stops bitcoin payments",
+                "text":"Baidu stops accepting bitcoins after China ban.",
+                "asset":
+                {
+                    "media":"assets/img/shots/sheep-marketplace.jpg",
+                    "credit":"<a href='http://www.businessweek.com/news/2013-12-06/baidu-stops-accepting-bitcoins-after-china-ban-causing-drop-1' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2013,12,17",
+                "headline":"China's Central Bank bans Bitcoin transactions",
+                "text":"Bitcoin crashes to nearly US$500 after further is banned from accepting deposits in yuan.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2014,1,26",
+                "headline":"BitInstant CEO charged with money laundering",
+                "text":"Charlie Shrem, CEO of BitInstant is arrested over allegations of money laundering in connection with Silk Road. He is arrested at JFK airport for charges filed in a Manhattan federal court.",
+                "asset":
+                {
+                    "media":"assets/img/shots/bitinstant-ceo-arrested.jpg",
+                    "credit":"<a href='http://www.scribd.com/doc/202555785/United-States-vs-Charles-Shrem-and-Robert-M-Faiella' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			},
+			{
+                "startDate":"2014,1,28",
+                "headline":"Charlie Shrem resigns from the Bitcoin Foundation",
+                "text":"Charlie Shrem resigns from his position as Vice Chairman of the Bitcoin Foundation.",
+                "asset":
+                {
+                    "media":"assets/img/shots/charlie-shrem.jpg",
+                    "credit":"<a href='https://bitcoinfoundation.org/blog/?p=400' rel='nofollow' target='_blank'>source</a>",
+                    "caption":""
+                }
+			}
+        ]
+    }
+}

@@ -128,5 +128,45 @@ export default {
       });
       return prices;
     });
+  },
+
+  getChartDataTrendAndPrice(coin) {
+    let p1 = this.getCoinData(coin, 'HistoricalAllTime');
+    let p2 = this.getGoogleTrendData(coin, 'HistoricalAllTime', 'trend');
+    const getDateSpan = this.getDateSpan;
+    var promises = [p1, p2];
+    return Promise.all(promises).then(function(results) {
+      let chartData = results[0];
+      let trendData = results[1]
+      let dateSpan = getDateSpan(chartData);
+      if (chartData.length > 0) {
+        trendData = _.filter(trendData, (data) => {
+          var trendDate = new Date(data.date);
+          return trendDate >= new Date(dateSpan.startDate) && trendDate <= new Date(dateSpan.endDate);
+        })
+      }
+      return {
+        priceData: chartData,
+        trendData: trendData,
+        dataSpan: dateSpan
+      }
+    });
+  },
+
+  getDateSpan(data) {
+    let len = data.length;
+    return {
+      startDate: data[len - 1].Date,
+      endDate: data[0].Date
+    }
+  },
+
+  getTimeLineData() {
+    let dataRef = FirebaseApp.database().ref('/timeline');
+    return new Promise(function(resolve, reject) {
+      return dataRef.once('value').then((snapshot) => {
+        return resolve(snapshot.val());
+      })
+    });
   }
 }

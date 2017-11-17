@@ -17,6 +17,7 @@ module.exports = {
   ],
   // add your custom rules here
   'rules': {
+    'one-var': 0,
     'no-multiple-empty-lines': 0,
     'semi': 0,
     'indent': 0,

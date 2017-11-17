@@ -7,12 +7,16 @@ import Chartkick from 'chartkick'
 import VueChartkick from 'vue-chartkick'
 import VueResource from 'vue-resource';
 import Vuetify from 'vuetify'
-import('../node_modules/vuetify/dist/vuetify.min.css')
 
+import('../node_modules/vuetify/dist/vuetify.min.css')
+var VueHighcharts = window.VueHighcharts;
+var Highcharts = window.Highcharts;
 Vue.config.productionTip = false
 Vue.use(Vuetify)
 Vue.use(VueChartkick, { Chartkick })
 Vue.use(VueResource);
+Vue.use(VueHighcharts, { Highcharts: Highcharts });
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -1,15 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import CoinNews from '@/components/CoinNews'
-import FinancialChart from '@/components/FinancialChart'
 import GoogleTrendAndPriceChart from '@/components/googleTrendClose'
+import TrendHighChart from '@/components/TrendHighChart'
+import Ohlc from '@/components/Ohlc'
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      component: FinancialChart
+      component: Ohlc
     },
     {
       path: '/trend/:coin',
@@ -25,9 +27,14 @@ export default new Router({
     },
     {
       path: '/chart/:coin',
-      name: 'Chart',
-      component: FinancialChart,
+      name: 'OhlcChart',
+      component: Ohlc,
       props: true
+    },
+    {
+      path: '/timeline',
+      name: 'TimeLine',
+      component: TrendHighChart
     }
   ]
 })

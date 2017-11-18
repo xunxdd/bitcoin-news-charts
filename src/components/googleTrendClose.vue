@@ -9,7 +9,7 @@
     </v-flex>
     <v-flex xs12 sm12>
       <h5>{{title}} Google Trend Regional Interest</h5>
-      <geo-chart :data="trendData.regional" height="300px" width="960px" display-mode="regional"></geo-chart>
+      <geo-chart :data="trendData.regional" height="300px" width="900px" display-mode="regional"></geo-chart>
     </v-flex>
     <v-layout row wrap>
       <v-flex xs12 sm5>

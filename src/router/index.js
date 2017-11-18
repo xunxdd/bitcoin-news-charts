@@ -2,9 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import CoinNews from '@/components/CoinNews'
 import GoogleTrendAndPriceChart from '@/components/googleTrendClose'
-import TrendHighChart from '@/components/TrendHighChart'
 import Ohlc from '@/components/Ohlc'
-
+import BitcoinTimeLine from '@/components/BitcoinTimeLine'
 Vue.use(Router)
 
 export default new Router({
@@ -34,7 +33,7 @@ export default new Router({
     {
       path: '/timeline',
       name: 'TimeLine',
-      component: TrendHighChart
+      component: BitcoinTimeLine
     }
   ]
 })

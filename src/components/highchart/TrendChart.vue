@@ -33,12 +33,6 @@ export default {
           align: 'left'
         }
       },
-      tooltip: {
-        style: {
-          width: '250px'
-        }
-      },
-
       yAxis: [{
           max: 100,
           min: 0,

@@ -101,9 +101,5 @@ export const TIMELINE_MENU = {
     text: 'Time Line',
     link: '/timeline',
     img: 'images/coindesk.png'
-  }, {
-    text: 'Indicators',
-    link: '/ohlc',
-    img: 'images/coindesk.png'
   }]
 }

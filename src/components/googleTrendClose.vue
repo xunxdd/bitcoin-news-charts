@@ -3,11 +3,9 @@
   <v-layout row wrap>
     <v-flex xs12>
       <h5>{{title}} Google Trend and Price</h5>
-      <h6>({{this.dateSpan.startDate}} - {{this.dateSpan.endDate}})</h6>
+      <trend-chart :trend-data="dataSet"></trend-chart>
     </v-flex>
     <v-flex xs12 sm12>
-      <google-trend-close-line :data-set="dataSet" :dimension="dimension" title="bitcoin">
-      </google-trend-close-line>
     </v-flex>
     <v-flex xs12 sm12>
       <h5>{{title}} Google Trend Regional Interest</h5>
@@ -26,16 +24,16 @@
 </template>
 
 <script>
-import GoogleTrendCloseLine from './charts/googleTrendCloseLine'
 import TrendList from './lists/TrendList'
+import TrendChart from './highchart/TrendChart'
 import DataUtil from '../services/DataUtil'
 import _ from 'lodash'
 
 export default {
   name: 'GoogleTrendAndPriceChart',
   components: {
-    GoogleTrendCloseLine,
-    TrendList
+    TrendList,
+    TrendChart
   },
   props: {
     coin: String
@@ -70,8 +68,8 @@ export default {
 
     bindData(results) {
       this.dataSet = {
-        chartData: results[0],
-        trendData: results[1]
+        price: results[0],
+        trend: results[1]
       };
       if (results[0].length > 0) {
         this.dateSpan = this.getDateSpan(results[0]);
@@ -103,16 +101,6 @@ export default {
       dateSpan: {},
       trendData: {
         regional: []
-      },
-      dimension: {
-        width: 960,
-        height: 300,
-        margin: {
-          top: 20,
-          right: 50,
-          bottom: 30,
-          left: 50
-        }
       }
     }
   }

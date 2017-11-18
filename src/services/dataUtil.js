@@ -130,29 +130,6 @@ export default {
     });
   },
 
-  getChartDataTrendAndPrice(coin) {
-    let p1 = this.getCoinData(coin, 'HistoricalAllTime');
-    let p2 = this.getGoogleTrendData(coin, 'HistoricalAllTime', 'trend');
-    const getDateSpan = this.getDateSpan;
-    var promises = [p1, p2];
-    return Promise.all(promises).then(function(results) {
-      let chartData = results[0];
-      let trendData = results[1]
-      let dateSpan = getDateSpan(chartData);
-      if (chartData.length > 0) {
-        trendData = _.filter(trendData, (data) => {
-          var trendDate = new Date(data.date);
-          return trendDate >= new Date(dateSpan.startDate) && trendDate <= new Date(dateSpan.endDate);
-        })
-      }
-      return {
-        priceData: chartData,
-        trendData: trendData,
-        dataSpan: dateSpan
-      }
-    });
-  },
-
   getDateSpan(data) {
     let len = data.length;
     return {
@@ -167,6 +144,36 @@ export default {
       return dataRef.once('value').then((snapshot) => {
         return resolve(snapshot.val());
       })
+    });
+  },
+
+  getTrendTimeLineData() {
+    let p1 = this.getCoinData('bitcoin', 'HistoricalAllTime');
+    let p2 = this.getGoogleTrendData('bitcoin', 'HistoricalAllTime', 'trend');
+    let p3 = this.getTimeLineData();
+    const getDateSpan = this.getDateSpan;
+    return Promise.all([p1, p2, p3]).then(function(results) {
+      let chartData = results[0];
+      let trendData = results[1];
+      let timeLineData = results[2];
+
+      let dateSpan = getDateSpan(chartData);
+      if (chartData.length > 0) {
+        trendData = _.filter(trendData, (data) => {
+          var trendDate = new Date(data.date);
+          return trendDate >= new Date(dateSpan.startDate) && trendDate <= new Date(dateSpan.endDate);
+        });
+        timeLineData = _.filter(timeLineData, (data) => {
+          var date = new Date(data.date);
+          return date >= new Date(dateSpan.startDate) && date <= new Date(dateSpan.endDate);
+        })
+      }
+      return {
+        priceData: chartData,
+        trendData: trendData,
+        timeLineData: timeLineData,
+        dataSpan: dateSpan
+      }
     });
   }
 }

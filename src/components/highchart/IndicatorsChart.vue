@@ -94,6 +94,9 @@ export default {
   methods: {
     updateChart() {
       var chart = this.$refs['IndictorsChart'].chart;
+      if (!chart) {
+        return;
+      }
       while (chart.series.length > 0) {
         chart.series[0].remove(true);
       }
@@ -105,6 +108,9 @@ export default {
     },
     updateTitle() {
       var chart = this.$refs['IndictorsChart'].chart;
+      if (!chart) {
+        return;
+      }
       chart.setTitle({text: _.capitalize(this.coin.replace('-', ' ')) + ' Financial Chart'});
     }
   }

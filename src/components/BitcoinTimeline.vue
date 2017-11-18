@@ -21,8 +21,10 @@ export default {
   },
   methods: {
     fetchData() {
+      var p1 = DataUtil.getTimeLineData();
+      var p2 = DataUtil.getChartDataTrendAndPrice('bitcoin');
+      Prom
       DataUtil.getTimeLineData().then((data) => {
-        console.log(data.length)
         data = _.filter(data, (itm) => {
           return new Date(itm.date) >= new Date('04/20/2013');
         });
@@ -37,7 +39,6 @@ export default {
             title: index
           };
         })
-        console.log(JSON.stringify(data));
       });
       // DataUtil.getChartDataTrendAndPrice('bitcoin').then(this.bindData.bind(this));
     },

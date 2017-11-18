@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      coinName: this.coin,
+      coinName: this.coin || 'bitcoin',
       series: []
     }
   },

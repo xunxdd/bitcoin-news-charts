@@ -8,13 +8,6 @@ import {
   TIMELINE_SERIES,
   TIMELINE_EVENTS
 } from '../../assets/timelineData'
-import VueHighcharts from 'vue-highcharts';
-import Highcharts from 'highcharts';
-import loadStock from 'highcharts/modules/stock';
-loadStock(Highcharts);
-Vue.use(VueHighcharts, {
-  Highcharts
-});
 
 export default {
   name: 'TimeLineChart',

@@ -1,22 +1,31 @@
 <template>
-<highstock :options="chartOptions" ref="vue-high-chart" style="min-width: 400px; height: 400px; max-width: 900px "></highstock>
+<highstock :options="chartOptions" ref="trendchart" style="min-width: 400px; height: 300px; max-width: 900px "></highstock>
 </template>
 <script>
 import _ from 'lodash'
 
 export default {
   name: 'TrendChart',
-  props: ['series'],
+  props: ['trendData'],
   watch: {
-    'series': 'updateChart'
+    'trendData': 'updateChart'
   },
   data() {
+    var groupingUnits = [
+      [
+        'week', // unit name
+        [1] // allowed multiples
+      ],
+      [
+        'month', [1, 2, 3, 4, 6]
+      ]
+    ];
     var options = {
       chart: {
         alignTicks: false
       },
       rangeSelector: {
-        selected: 1
+        selected: 5
       },
       xAxis: {
         type: 'datetime',
@@ -24,10 +33,6 @@ export default {
           align: 'left'
         }
       },
-      title: {
-        text: 'Highcharts and Highsoft timeline'
-      },
-
       tooltip: {
         style: {
           width: '250px'
@@ -51,7 +56,7 @@ export default {
             }
           },
           title: {
-            text: 'Marketcap',
+            text: 'Price',
             style: {
               color: '#000000'
             }
@@ -63,16 +68,8 @@ export default {
 
       plotOptions: {
         series: {
-          marker: {
-            enabled: false,
-            symbol: 'circle',
-            radius: 2
-          },
-          fillOpacity: 0.5
-        },
-        flags: {
-          tooltip: {
-            xDateFormat: '%B %e, %Y'
+          dataGrouping: {
+            units: groupingUnits
           }
         }
       },
@@ -84,11 +81,62 @@ export default {
   },
   methods: {
     updateChart() {
-      var chart = this.$refs['vue-high-chart'].chart;
-      _.forEach(this.series, function(serie, index) {
-        chart.addSeries(serie);
+      var chart = this.$refs['trendchart'].chart;
+      if (!this.trendData.trend || !this.trendData.price) {
+        return;
+      }
+
+      var trendSerie = this.getTrendSerie(this.trendData.trend);
+      var priceSerie = this.getPriceSerie(this.trendData.price, this.trendData.trend);
+      while (chart.series.length > 0) {
+        chart.series[0].remove(true);
+      }
+      chart.addSeries(priceSerie);
+      chart.addSeries(trendSerie);
+      chart.redraw();
+    },
+
+    getTrendSerie(data) {
+      data = _.orderBy(data, function(itm) {
+        return new Date(itm.date).getTime();
       });
-      chart.redraw()
+      data = _.map(data, (itm) => {
+        return [new Date(itm.date).getTime(), itm.value];
+      });
+      return {
+        type: 'spline',
+        id: 'google-trends',
+        name: 'Google trend',
+        data: data,
+        tooltip: {
+          xDateFormat: '%B %Y'
+        }
+      };
+    },
+
+    getPriceSerie(data, trendData) {
+      data = _.orderBy(data, function(itm) {
+        return new Date(itm.Date).getTime();
+      });
+      var times = _.map(trendData, (itm) => {
+        return new Date(itm.date).getTime()
+      });
+      var priceData = [];
+      _.forEach(data, (itm) => {
+        var time = new Date(itm.Date).getTime();
+        if (_.includes(times, time)) {
+          priceData.push([time, parseFloat(itm.High)])
+        }
+      });
+      return {
+        yAxis: 1,
+        name: 'Price',
+        id: 'price',
+        data: priceData,
+        tooltip: {
+          xDateFormat: '%B %Y'
+        }
+      }
     }
   }
 }

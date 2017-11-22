@@ -94,12 +94,12 @@ export const NEWS_MENU = {
 };
 
 export const TIMELINE_MENU = {
-  icon: 'subscriptions',
+  icon: 'history',
   text: 'Time Line',
   active: false,
   items: [{
     text: 'Time Line',
     link: '/timeline',
-    img: 'images/coindesk.png'
+    img: 'coins/bitcoin.png'
   }]
 }

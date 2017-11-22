@@ -101,7 +101,7 @@ export default {
         item.link = '/trend/' + item.link;
         return item;
       });
-      var navItems = [chartItems, trendItems, NEWS_MENU, TIMELINE_MENU];
+      var navItems = [chartItems, trendItems, TIMELINE_MENU, NEWS_MENU];
       return navItems;
     }
   },

@@ -1,19 +1,25 @@
 <template>
 <v-layout row wrap>
-  <v-flex xs10>
+  <v-flex xs12>
+    <timeLine></timeLine>
+  </v-flex>
+<!--  <v-flex xs10>
     <time-line-chart :chartData="dataSet"></time-line-chart>
   </v-flex>
+-->  
 </v-layout>
 </template>
 
 <script>
 import TimeLineChart from './highchart/TimeLineChart'
 import DataUtil from '../services/DataUtil'
+import TimeLine from './timeline/timeline'
 
 export default {
   name: 'BitcoinTimeLine',
   components: {
-    TimeLineChart
+    TimeLineChart,
+    TimeLine
   },
   data() {
     return {

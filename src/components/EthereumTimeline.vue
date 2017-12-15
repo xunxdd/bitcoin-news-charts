@@ -8,11 +8,12 @@
 
 <script>
 import TimeLine from './timeline/timeline'
-import {TIME_LINE_DATA} from '../assets/TIME_LINE_BITCOIN';
+import {TIME_LINE_DATA} from '../assets/TIME_LINE_ETHEREUM';
 
 export default {
-  name: 'BitcoinTimeLine',
+  name: 'EthereumTimeLine',
   data() {
+    console.log(TIME_LINE_DATA)
     return {
       timelineData: TIME_LINE_DATA
     }

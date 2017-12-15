@@ -98,8 +98,14 @@ export const TIMELINE_MENU = {
   text: 'Time Line',
   active: false,
   items: [{
-    text: 'Time Line',
-    link: '/timeline',
-    img: 'coins/bitcoin.png'
-  }]
+      text: 'Bitcoin',
+      link: '/timeline-bitcoin',
+      img: 'coins/bitcoin.png'
+    },
+    {
+      text: 'Ethereum',
+      link: '/timeline-ethereum',
+      img: 'coins/ethereum.png'
+    }
+  ]
 }

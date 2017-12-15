@@ -12,8 +12,9 @@
 <div>
   <v-navigation-drawer persistent clipped enable-resize-watcher v-model="drawer" app>
     <v-list dense>
-      <v-list-group v-for="item in items" :value="item.active" :key="item.text" :router="!!item.link" :to="item.link">
-        <v-list-tile slot="item" @click="">
+      <v-list-group v-for="item in items" :value="item.active" :key="item.text">
+
+        <v-list-tile slot="item" @click="" v-if="item.items">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
@@ -33,6 +34,15 @@
           </v-list-tile-content>
         </v-list-tile>
       </v-list-group>
+      <v-list-tile to="/hello">
+        <v-list-tile-action>
+          <v-icon>fa-handshake-o</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title class="white-link">Hello / Why</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+
     </v-list>
   </v-navigation-drawer>
   <v-toolbar color="red" dense fixed clipped-left app>

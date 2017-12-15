@@ -4,6 +4,9 @@ import CoinNews from '@/components/CoinNews'
 import GoogleTrendAndPriceChart from '@/components/googleTrendClose'
 import Ohlc from '@/components/Ohlc'
 import BitcoinTimeLine from '@/components/BitcoinTimeLine'
+import EthereumTimeLine from '@/components/EthereumTimeLine'
+import Hello from '@/components/Hello'
+
 Vue.use(Router)
 
 export default new Router({
@@ -31,9 +34,19 @@ export default new Router({
       props: true
     },
     {
-      path: '/timeline',
-      name: 'TimeLine',
+      path: '/timeline-bitcoin',
+      name: 'BitcoinTimeLine',
       component: BitcoinTimeLine
+    },
+    {
+      path: '/timeline-ethereum',
+      name: 'EthereumTimeLine',
+      component: EthereumTimeLine
+    },
+    {
+      path: '/hello',
+      name: 'Hello',
+      component: Hello
     }
   ]
 })

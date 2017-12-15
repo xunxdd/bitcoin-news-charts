@@ -1,10 +1,12 @@
-# Bitcoin News and Charts
+# Coin News and Charts
 
-> Last three month candlesticks charts of Bitcoin, Litecoin and ethereum, including RSI, MACD, Exponential Moving Average (Ema). 
+* Last three month candlesticks charts of top 10 cryptocurrencies, including MACD, SMA. 
 
-> Last three month google trend analysis (regional, search trend, search queries and topics).
+* Last three month google trend analysis (regional, search trend, search queries and topics).
 
->  Collection of cryto currency news and discussions from CoinDesk, Bitcoin Magzine, CrytoCoin News, Coin Telegraph, News Bitcoin, Bitcoin Subreddit, Crypto-Currency Sub Reddit.
+* Collection of cryto currency news and discussions from CoinDesk, Bitcoin Magzine, CrytoCoin News, Coin Telegraph, News Bitcoin, Bitcoin Subreddit, Crypto-Currency Sub Reddit.
+
+* Bitcoin timeline.
 
 # See it in Action
 
@@ -12,16 +14,18 @@
 
 # Client Side
 
-> The very best Vue.js
-> Financial charts is built using [D3.js] (https://d3js.org/) , [Techan.js] (http://techanjs.org/)
-> Google trend map is using Google chart
+* Vue.js
+* Financial charts is built using [highstock] (http://highcharts.com) (changed from earlier version which uses [D3.js] (https://d3js.org/) , [Techan.js] (http://techanjs.org/)
+* Google trend map is using Google chart
+* Bitcoin timeline uses [timeline.js] (http://timeline.knightlab.com) 
 
 # Server Side Data Handling
-Server Side Data is handled using seperate Node.js application. Trading data is from [CoinMarketCap](https://https://coinmarketcap.com/), Google trend data is from [Google Trend Api] (https://www.npmjs.com/package/google-trends-api)
+Server Side Data is handled using seperate Node.js application. Trading data is from [CoinMarketCap](https://https://coinmarketcap.com/), Google trend data is from [Google Trend Api] (https://www.npmjs.com/package/google-trends-api). Timeline data from various sites, mostly [wikipedia] (https://en.wikipedia.org/wiki/History_of_bitcoin).
 
 # Coming Next
-Unit tests
-In depth analysis of financial Data and convergence of news, search and trading
+* Twitter trend analysis and price overlay. Twitter storm that maps out influencers' circle
+* Unit tests
+* In depth analysis of financial Data and convergence of news, search and trading
 
 ## Build Setup
 

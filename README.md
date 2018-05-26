@@ -20,7 +20,7 @@
 * Bitcoin timeline uses [timeline.js] (http://timeline.knightlab.com) 
 
 # Server Side Data Handling
-Server Side Data is handled using seperate Node.js application. Trading data is from [CoinMarketCap](https://https://coinmarketcap.com/), Google trend data is from [Google Trend Api] (https://www.npmjs.com/package/google-trends-api). Timeline data from various sites, mostly [wikipedia] (https://en.wikipedia.org/wiki/History_of_bitcoin).
+Server Side Data is handled using seperate [Node.js application] (https://github.com/xunxdd/bitcoin-news-chart-data/tree/master) . Trading data is from [CoinMarketCap](https://https://coinmarketcap.com/), Google trend data is from [Google Trend Api] (https://www.npmjs.com/package/google-trends-api). Timeline data from various sites, mostly [wikipedia] (https://en.wikipedia.org/wiki/History_of_bitcoin).
 
 # Coming Next
 * Twitter trend analysis and price overlay. Twitter storm that maps out influencers' circle
